@@ -22,6 +22,7 @@ fitbit.conf
 plex.conf
 *.sync-conflict-*
 *.tmp
+*.bin
 .syncthing.home-assistant_v2.db.*
 core.*
 
@@ -40,6 +41,7 @@ temp
 # .storage
 .cloud/*.*
 .vscode/*.*
+.vscode/*
 .storage/aut*
 .storage/auth
 .storage/hassio*

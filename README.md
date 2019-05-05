@@ -14,6 +14,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 
 ## :nut_and_bolt:  Devices
 
+* [INTEL® NUC KIT NUC8I3BEH](https://www.intel.com/content/www/us/en/products/boards-kits/nuc/kits/nuc8i3beh.html)
 * [Amazon Echo Dot(s)](https://www.amazon.com/Amazon-Echo-Dot-Portable-Bluetooth-Speaker-with-Alexa-Black/dp/B01DFKC2SO/ref=sr_1_2?s=amazon-devices&ie=UTF8&qid=1540222813&sr=1-2&keywords=echo)
 * [Amazon Echo](https://www.amazon.com/dp/B06XCM9LJ4/ref=ods_mccc_Rdr)
 * [Sonos Speakers](https://www.sonos.com)
@@ -55,7 +56,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 * [Six Sonoff Secrets: Storage, Safety, Switches, Sensors, Software, and Sites](https://www.youtube.com/watch?v=8mz5sCAvDAY)
 * [TV Control w/HASS](https://www.reddit.com/r/homeassistant/comments/5b074e/tv_control_whass/)
 
-##: file_folder:  Other Resources 
+## :file_folder:  Other Resources 
 
 * [forum](https://community.home-assistant.io/latest) 
 * [Awesome Home Assistant](https://www.awesome-ha.com/#public-configurations)
