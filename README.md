@@ -12,9 +12,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 * [Community Hass.io Add-on: Node-RED](https://community.home-assistant.io/t/community-hass-io-add-on-node-red/55023)
 * [Echo Devices as Media Player](https://community.home-assistant.io/t/echo-devices-alexa-as-media-player-testers-needed/58639)
 
-##:clipboard:  Links
-
-##:nut_and_bolt:  Devices
+## :nut_and_bolt:  Devices
 
 * [Amazon Echo Dot(s)](https://www.amazon.com/Amazon-Echo-Dot-Portable-Bluetooth-Speaker-with-Alexa-Black/dp/B01DFKC2SO/ref=sr_1_2?s=amazon-devices&ie=UTF8&qid=1540222813&sr=1-2&keywords=echo)
 * [Amazon Echo](https://www.amazon.com/dp/B06XCM9LJ4/ref=ods_mccc_Rdr)
@@ -45,7 +43,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 * [Magnetic Contact Reed Switches](https://www.ebay.com/itm/Lots-NO-NC-Magnetic-Contact-Reed-Switch-Door-Window-Sensor-Entry-Security-Alarm/123096126641?ssPageName=STRK%3AMEBIDX%3AIT&var=423513192869&_trksid=p2057872.m2749.l2649)
 * [Z-Wave Garage Door Sensor](https://www.monoprice.com/product?c_id=122&cp_id=12212&cs_id=1221201&p_id=11987&seq=1&format=2)
 
-##:mortar_board:  Inspiration 
+## :mortar_board:  Inspiration 
 
 * [Brad's Hardware List](https://diyfuturism.com/index.php/2017/11/20/my-smart-home-hardware-list/)
 * [Three-way switch](https://www.youtube.com/watch?v=GEJCk-Dr3BQ)
@@ -57,7 +55,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 * [Six Sonoff Secrets: Storage, Safety, Switches, Sensors, Software, and Sites](https://www.youtube.com/watch?v=8mz5sCAvDAY)
 * [TV Control w/HASS](https://www.reddit.com/r/homeassistant/comments/5b074e/tv_control_whass/)
 
-##:file_folder:  Other Resources 
+##: file_folder:  Other Resources 
 
 * [forum](https://community.home-assistant.io/latest) 
 * [Awesome Home Assistant](https://www.awesome-ha.com/#public-configurations)
@@ -79,9 +77,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 * [Sonoff-Tasmota wiki](https://github.com/arendst/Sonoff-Tasmota/wiki)
 * [Floorplan tool (commercial)](https://www.smartdraw.com/)
 
-
-
-##:computer:  Raspberry Pi Related 
+## :computer:  Raspberry Pi Related 
 
 * [Awesome Raspberry Pi](https://github.com/thibmaek/awesome-raspberry-pi)
 
