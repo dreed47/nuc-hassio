@@ -1,0 +1,38 @@
+  entities:
+    - icon: 'mdi:camera'
+      name: FrontCam
+      url: 'https://frontcam/'
+    - icon: 'mdi:camera'
+      name: LivingroomCam
+      url: 'https://livingroomcam/'
+    - icon: 'mdi:camera'
+      name: GarageCam
+      url: 'https://garagecam/'
+    - icon: 'mdi:camera'
+      name: BackLowerCam
+      url: 'https://backlowercam/'
+    - icon: 'mdi:camera'
+      name: BackPorch
+      url: 'https://backporch/'
+
+    - url: 'https://www.home-assistant.io/'
+      name: Home Assistant
+      icon: 'mdi:home-assistant' 
+    - url: 'https://www.home-assistant.io/getting-started/'
+      name: Getting Started
+      icon: 'mdi:download'
+    - url: 'https://www.home-assistant.io/cookbook/'
+      name: Configuration Examples
+      icon: 'mdi:home-heart'
+    - url: 'https://community.home-assistant.io/'
+      name: Forum
+      icon: 'mdi:forum'
+    - url: 'https://discord.gg/c5DvZ4e'
+      name: Chat
+      icon: 'mdi:chat'
+    - url: 'https://www.home-assistant.io/components/'
+      name: Components
+      icon: 'mdi:download'
+    - url: 'https://reedha.duckdns.org:2880/#flow/7b88405.582f2c'
+      name: Node Red
+      icon: 'mdi:leaf'      

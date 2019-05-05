@@ -1,0 +1,68 @@
+  - name: Home
+    latitude: 41.160921903903997
+    longitude: -81.384911151259004
+    radius: 200
+  - name: Stow
+    latitude: 41.167146162987002
+    longitude: -81.443417736349005
+    radius: 3000
+  - name: Sligo
+    latitude: 41.098429827361002
+    longitude: -79.485015285670997
+    radius: 3000
+  - name: Santa Fe
+    latitude: 35.657938065172999
+    longitude: -105.95597505193
+    radius: 28000
+  - name: Pittsburgh
+    latitude: 40.415875475874003
+    longitude: -79.937518530025997
+    radius: 15000
+  - name: Hudson School
+    latitude: 41.243637929614998
+    longitude: -81.426067461917
+    radius: 200
+  - name: South Charlotte
+    latitude: 35.075184268671997
+    longitude: -80.782513575872997
+    radius: 20000
+  - name: Shippenville
+    latitude: 41.244764132638998
+    longitude: -79.436584230460994
+    radius: 200
+  - name: Rimersburg
+    latitude: 41.036583884530998
+    longitude: -79.502157419577003
+    radius: 5000
+  - name: Cannonsburg
+    latitude: 40.251935182007003
+    longitude: -80.137025432049995
+    radius: 9000
+  - name: Clarion
+    latitude: 41.223684547348
+    longitude: -79.362242536221999
+    radius: 4000
+  - name: Cuyahoga Falls
+    latitude: 41.157492439024999
+    longitude: -81.536757777331005
+    radius: 3000
+  - name: Kent
+    latitude: 41.145491104074999
+    longitude: -81.358896028622993
+    radius: 2500
+  - name: Ohio
+    latitude: 40.088968278
+    longitude: -82.786484670797
+    radius: 200000
+  - name: Pennsylvania  
+    latitude: 40.736142085332
+    longitude: -78.696984965519
+    radius: 180000
+  - name: North Carolina  
+    latitude: 35.262315308573
+    longitude: -79.196806434103
+    radius: 130000
+  - name: New Mexico  
+    latitude: 34.85975089242
+    longitude: -79.196806434103
+    radius: -105.48976648239

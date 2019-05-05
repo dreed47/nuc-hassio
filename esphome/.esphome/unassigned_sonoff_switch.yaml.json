@@ -1,0 +1,17 @@
+{
+  "use_legacy_ota": false, 
+  "arduino_version": "espressif8266@1.8.0", 
+  "address": "unassigned_sonoff_switch.local", 
+  "storage_version": 1, 
+  "esphome_version": "1.12.2", 
+  "build_path": "/config/esphome/unassigned_sonoff_switch", 
+  "name": "unassigned_sonoff_switch", 
+  "firmware_bin_path": "/data/unassigned_sonoff_switch/.pioenvs/unassigned_sonoff_switch/firmware.bin", 
+  "esphome_core_version": {
+    "tag": "v1.12.2", 
+    "repository": "https://github.com/esphome/esphome-core.git"
+  }, 
+  "board": "esp01_1m", 
+  "esp_platform": "ESP8266", 
+  "src_version": 1
+}

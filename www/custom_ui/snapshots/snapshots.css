@@ -1,0 +1,20 @@
+p {
+    font-weight: bold;
+    color: black;
+}
+
+div.snapshot-image {
+    padding: 5px;
+    float: left;
+}
+
+div.snapshot-image a {}
+
+div.snapshot-image img {
+    height: 50px;
+    width: 100px;
+}
+
+div.snapshot-container {
+    border: 1px;
+}

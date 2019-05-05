@@ -1,0 +1,11 @@
+  - platform: mqtt
+    name: "garage door"
+    state_topic: "sensor/garagedoor/state"
+    command_topic: "sensor/garagedoor/action"
+    payload_open: "OPEN"
+    payload_close: "OPEN"
+    payload_stop: "OPEN"
+    state_open: "open"
+    state_closed: "closed"
+    #optomistic: false
+    retain: false

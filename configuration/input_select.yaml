@@ -1,0 +1,27 @@
+  hass_theme:
+    name: Set Current Theme
+    options:
+      - 'default'
+      - 'dark_blue'
+      - 'dark_cyan'
+      - 'dark_light_red'
+      - 'dark_orange'
+      - 'dark_theme'
+      - 'dark_yellow'
+      - 'gray_green'
+      - 'light_blue'
+      - 'light_cyan'
+      - 'light_dark_orange'
+      - 'light_green'
+      - 'light_light_red'
+      - 'light_navy_blue'
+      - 'light_orange'
+      - 'light_yellow'
+      - 'material_dark_green'
+      - 'navy_blue_yellow'
+      - 'night'
+      - 'sublimination'
+      - 'darkorange'
+    initial: 'dark_blue'
+    #icon: 'mdi:palette'
+

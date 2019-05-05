@@ -1,0 +1,29 @@
+esphomeyaml:
+  name: porch
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: !secret wifi_ssid 
+  password: !secret wifi_password
+  # manual_ip:
+  #   static_ip: 192.168.86.23
+  #   gateway: 192.168.86.1  
+  #   subnet: 255.255.255.0
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret api_password
+
+ota:
+  password: !secret ota_password
+  
+mqtt:
+  broker: 192.168.86.38
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  # client_id: esphome
+  port: 1883

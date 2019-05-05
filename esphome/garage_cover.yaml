@@ -1,0 +1,63 @@
+esphomeyaml:
+  name: garage_cover
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: !secret wifi_ssid 
+  password: !secret wifi_password
+  # manual_ip:
+  #   static_ip: 192.168.86.249
+  #   gateway: 192.168.86.1  
+  #   subnet: 255.255.255.0
+
+# deep_sleep:
+#   run_duration: 10s
+#   sleep_duration: 30s
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret api_password
+
+ota:
+  password: !secret ota_password
+
+mqtt:
+  broker: 192.168.86.38
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  # client_id: esphome
+  port: 1883
+
+switch:
+  - platform: gpio
+    pin: D1
+    name: "Garage Door Open Switch"
+    id: open_switch
+  - platform: gpio
+    pin: D1
+    name: "Garage Door Close Switch"
+    id: close_switch
+cover:
+  - platform: template
+    name: "Garage Door"
+    open_action:
+      # Cancel any previous action
+      - switch.turn_off: close_switch
+      # Turn the OPEN switch on briefly
+      - switch.turn_on: open_switch
+      - delay: 0.1s
+      - switch.turn_off: open_switch
+    close_action:
+      - switch.turn_off: open_switch
+      - switch.turn_on: close_switch
+      - delay: 0.1s
+      - switch.turn_off: close_switch
+    stop_action:
+      - switch.turn_off: close_switch
+      - switch.turn_off: open_switch
+    optimistic: true
+    #assumed_state: true    

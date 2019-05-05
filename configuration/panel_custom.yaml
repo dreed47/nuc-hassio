@@ -1,0 +1,16 @@
+  # - name: floorplan
+  #   sidebar_title: Floorplan
+  #   sidebar_icon: mdi:home
+  #   url_path: floorplan
+  #   config: !include floorplan.yaml
+  - name: snapshots
+    sidebar_title: Cam Snapshots
+    sidebar_icon: mdi:hand-pointing-right
+    url_path: snapshots
+    config: !include snapshots.yaml
+
+    #config: !include remote.yaml    
+  # - name: hello2
+  #   sidebar_title: Hello World
+  #   sidebar_icon: mdi:hand-pointing-right
+  #   url_path: hello2

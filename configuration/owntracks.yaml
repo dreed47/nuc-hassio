@@ -1,0 +1,25 @@
+  max_gps_accuracy: 200
+  waypoints: true
+  #mqtt_topic: "owntracks/#"
+  #events_only: true
+  waypoint_whitelist:
+    - david
+    - carol
+  region_mapping:
+    Home: Home
+    Stow: Stow
+    Sligo: Sligo
+    Santa Fe: Santa Fe
+    Pittsburgh: Pittsburgh
+    Hudson School: Hudson School
+    South Charlotte: South Charlotte
+    Shippenville: Shippenville
+    Rimersburg: Rimersburg
+    Cannonsburg: Cannonsburg
+    Clarion: Clarion
+    Cuyahoga Falls: Cuyahoga Falls
+    Kent: Kent
+    Ohio: Ohio  
+    Pennsylvania: Pennsylvania
+    North Carolina: North Carolina  
+    New Mexico: New Mexico

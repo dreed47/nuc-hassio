@@ -1,0 +1,67 @@
+*.pid
+*.xml
+*.csr
+*.crt
+*.key
+# *.conf
+# *.json
+*.db-shm
+*.db-wal
+*.sqlite
+*.txt
+*.db-journal
+*.log
+*.db
+*.backup
+*.bkp
+*.session
+*.DS_Store
+.bash_profile
+.bash_aliases
+fitbit.conf
+plex.conf
+*.sync-conflict-*
+*.tmp
+.syncthing.home-assistant_v2.db.*
+core.*
+
+secrets.yaml
+known_devices.yaml
+# plex.conf
+# fitbit.conf
+.spotify-token-cache
+.google.token
+.uuid
+._*
+.ios.conf
+alexa_media.pickle
+
+temp
+# .storage
+.cloud/*.*
+.vscode/*.*
+.storage/aut*
+.storage/auth
+.storage/hassio*
+.storage/esphome*
+.pc-*
+www/snapshots/*.*
+
+node-red
+tts
+backups
+docs
+lib
+deps
+tts
+icloud
+secrets
+__pycache__
+.DS_Store
+.stignore
+.stfolder
+.HA_VERSION
+esphome/.esphome/esphome.json
+.storage/person
+.storage/onboarding
+.storage/cloud

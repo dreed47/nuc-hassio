@@ -1,0 +1,17 @@
+{
+  "use_legacy_ota": false, 
+  "arduino_version": "espressif32@1.6.0", 
+  "address": "bath_temp.local", 
+  "storage_version": 1, 
+  "esphome_version": "1.12.2", 
+  "build_path": "/config/esphome/bath_temp", 
+  "name": "bath_temp", 
+  "firmware_bin_path": "/data/bath_temp/.pioenvs/bath_temp/firmware.bin", 
+  "esphome_core_version": {
+    "tag": "v1.12.2", 
+    "repository": "https://github.com/esphome/esphome-core.git"
+  }, 
+  "board": "esp-wrover-kit", 
+  "esp_platform": "ESP32", 
+  "src_version": 1
+}

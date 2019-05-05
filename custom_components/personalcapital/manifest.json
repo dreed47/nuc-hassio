@@ -1,0 +1,8 @@
+{
+    "domain": "personalcapital",
+    "name": "Personal Capital",
+    "documentation": "https://www.example.com",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": []
+  }

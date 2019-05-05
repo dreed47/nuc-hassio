@@ -1,0 +1,29 @@
+  # configurator:
+  #   title: 'Configurator'
+  #   icon: mdi:wrench
+  #   url: !secret configurator_url 
+    
+  # nodered:
+  #   title: 'NodeRed'
+  #   icon: mdi:shuffle-variant
+  #   url: !secret nodered_url
+  # terminal:
+  #   title: Terminal
+  #   icon: mdi:console
+  #   url: !secret terminal_url     
+  esphome:
+    title: ESPHome
+    icon: mdi:chip
+    url: !secret esphome_url          
+  # logview:
+  #   title: Log Viewer
+  #   icon: mdi:file-document-box
+  #   url: !secret logview_url    
+  # motioneye:
+  #   title: motionEye
+  #   icon: mdi:camera
+  #   url: !secret motioneye_url          
+  # syncthing:
+  #   title: Syncthing
+  #   icon: mdi:wrench
+  #   url: !secret syncthing_url        

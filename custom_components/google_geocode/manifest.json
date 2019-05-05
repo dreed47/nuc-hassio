@@ -1,0 +1,8 @@
+{
+    "domain": "google_geocode",
+    "name": "Google Geocode",
+    "documentation": "https://www.example.com",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": []
+  }

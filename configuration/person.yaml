@@ -1,0 +1,16 @@
+  - name: David
+    id: david123456
+#    user_id: 3a9358ebea4647eb98bbb34fd83f8ede
+    device_trackers:
+      - device_tracker.david_phone
+      - device_tracker.davidsiphone
+      - device_tracker.davidsapple_watch
+      - device_tracker.davidreedsipad
+      - device_tracker.david_sipad
+  - name: Carol
+    id: carol123456
+    device_trackers:
+      - device_tracker.carol_phone
+      - device_tracker.carolsphone
+      #- device_tracker.carolreedipad
+      - device_tracker.carolsapple_watch

@@ -1,0 +1,6 @@
+  ignore:
+    - apple_tv
+#    - igd
+  enable:
+#    - homekit
+#    - dlna_dmr

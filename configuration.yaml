@@ -1,0 +1,68 @@
+homeassistant:
+  name: !secret ha_name 
+  latitude: !secret latitude
+  longitude: !secret longitude 
+  elevation: !secret elevation 
+  unit_system: !secret unit_system 
+  time_zone: !secret time_zone
+  customize: !include configuration/customize.yaml
+
+#introduction:
+cloud:
+hassio:
+config:
+system_health:
+updater:
+conversation:
+recorder:
+history:
+logbook:
+
+map:
+sun:
+default_config:
+custom_updater:
+
+# stream:     
+
+ffmpeg:
+  ffmpeg_bin: /usr/bin/ffmpeg
+
+frontend: !include configuration/frontend.yaml
+mqtt: !include configuration/mqtt.yaml
+person: !include configuration/person.yaml
+camera: !include configuration/camera.yaml
+automation: !include configuration/automations.yaml
+panel_iframe: !include configuration/panel_iframe.yaml
+sensor: !include configuration/sensor.yaml
+nest: !include configuration/nest.yaml
+discovery: !include configuration/discovery.yaml
+cover: !include configuration/cover.yaml
+geo_location: !include configuration/geo_location.yaml
+weather: !include configuration/weather.yaml
+tplink: !include configuration/tplink.yaml 
+tuya: !include configuration/tuya.yaml
+device_tracker: !include configuration/device_tracker.yaml 
+owntracks: !include configuration/owntracks.yaml
+tts: !include configuration/tts.yaml
+zone: !include configuration/zone.yaml
+panel_custom: !include configuration/panel_custom.yaml
+weblink: !include configuration/weblink.yaml
+
+
+# input_boolean: !include configuration/input_boolean.yaml
+# zwave: !include configuration/zwave.yaml
+# zha: !include configuration/zha.yaml
+# ios: !include configuration/ios.yaml
+# http: !include configuration/http.yaml
+# script: !include configuration/script.yaml
+# binary_sensor: !include configuration/binary_sensor.yaml
+# media_player: !include configuration/media_player.yaml
+# light: !include configuration/light.yaml
+# switch: !include configuration/switch.yaml
+# group: !include configuration/group.yaml
+# input_select: !include configuration/input_select.yaml
+# dominos: !include configuration/dominos.yaml
+# calendar: !include configuration/calendar.yaml
+# dyson: !include configuration/dyson.yaml
+# sonoff: !include configuration/sonoff.yaml

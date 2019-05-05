@@ -1,0 +1,22 @@
+{
+    "card-tools": {
+        "dir": "/config/www/github/custom-cards/",
+        "version": "dae887"
+    },
+    "auto-entities": {
+        "dir": "/config/www/github/custom-cards/",
+        "version": "8057bd"
+    },
+    "tracker-card": {
+        "dir": "/config/www/github/custom-cards/",
+        "version": "1.2.6"
+    },
+    "button-card": {
+        "dir": "/config/www/github/custom-cards/",
+        "version": "1.6.0"
+    },
+    "pc-card": {
+        "dir": "/config/www/custom-lovelace/",
+        "version": "v0.0.3"
+    }
+}

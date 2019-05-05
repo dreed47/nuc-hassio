@@ -1,0 +1,16 @@
+  david_home:
+    name: David Home
+    initial: off
+    # icon: mdi:human-male
+  carol_home:
+    name: Carol Home
+    initial: off
+    # icon: mdi:human-female
+  house_guests_home:
+    name: House Guests
+    initial: off
+    # icon: mdi:airplane
+  home_occupied:
+    name: House Occupied
+    initial: off
+    # icon: mdi:human-male-female

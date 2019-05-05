@@ -1,0 +1,7 @@
+  discovery: false
+  light:
+    - host: 192.168.86.48
+    - host: 192.168.86.241
+    - host: 192.168.86.35
+  switch:
+    - host: 192.168.86.70

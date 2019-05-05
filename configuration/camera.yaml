@@ -1,0 +1,163 @@
+  - platform: generic
+    name: BasementOffice
+    username: !secret dlink_camera_username 
+    password: !secret dlink_camera_password 
+    still_image_url: http://192.168.86.39/image/jpeg.cgi
+    # http://192.168.86.39/mjpeg.cgi?.mjpeg
+    authentication: basic    
+  - platform: generic
+    name: Leo
+    username: !secret dlink_camera_username 
+    password: !secret dlink_camera_password 
+    still_image_url: http://192.168.86.27/image/jpeg.cgi
+    # http://192.168.86.27/mjpeg.cgi?.mjpeg
+    authentication: basic    
+
+
+  - platform: generic
+    name: Front
+    username: !secret wyze_camera_username
+    password: !secret wyze_camera_password
+    authentication: basic
+    still_image_url: https://192.168.86.40/cgi-bin/currentpic.cgi
+    verify_ssl: false
+    scan_interval: 5
+    # stream_source: rtsp://192.168.86.40:8554/unicast
+    # name: Front Wyzecam
+    # url: 'https://frontcam/'
+    # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
+
+  - platform: generic
+    name: BackLower
+    username: !secret wyze_camera_username
+    password: !secret wyze_camera_password
+    authentication: basic
+    still_image_url: https://192.168.86.32/cgi-bin/currentpic.cgi
+    verify_ssl: false
+    scan_interval: 5
+    # stream_source: rtsp://192.168.86.32:8554/unicast
+    # name: Hot Tub Xiaomi
+    # url: 'https://backlowercam/'
+    # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
+
+  - platform: generic
+    name: LivingRoom
+    username: !secret wyze_camera_username
+    password: !secret wyze_camera_password
+    authentication: basic
+    still_image_url: https://192.168.86.43/cgi-bin/currentpic.cgi
+    verify_ssl: false
+    scan_interval: 5
+    # stream_source: rtsp://192.168.86.43:8554/unicast
+    # name: Livingroom Xiaomi
+    # url: 'https://livingroomcam/'
+    # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
+
+  - platform: generic
+    name: BackPorch
+    username: !secret wyze_camera_username
+    password: !secret wyze_camera_password
+    authentication: basic
+    still_image_url: https://192.168.86.69/cgi-bin/currentpic.cgi
+    verify_ssl: false
+    scan_interval: 5
+    # stream_source: rtsp://192.168.86.69:8554/unicast
+    # name: Back Porch Xiaomi
+    # url: 'https://backporch/'
+    # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
+
+  - platform: generic
+    name: Garage2
+    username: !secret wyze_camera_username
+    password: !secret wyze_camera_password
+    authentication: basic
+    still_image_url: https://192.168.86.65/cgi-bin/currentpic.cgi
+    verify_ssl: false
+    scan_interval: 5
+    # stream_source: rtsp://192.168.86.65:8554/unicast
+    # name: Garage Wyzecam
+    # url: 'https://garagecam/'
+    # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
+
+  # - platform: mqtt
+  #   name: "HotTub RTSP"
+  #   state_topic: "myhome/hottub/status"
+  #   value_template: "{% if value_json[\"RTSP-Server\"] == 'running' %}h264_noseg_start{% else %}rtsp_stop{% endif %}"
+  #   command_topic: "myhome/hottub/set"
+  #   payload_on: "h264_noseg_start"
+  #   payload_off: "rtsp_stop"
+  #   optimistic: false
+  
+  # - platform: mqtt
+  #   name: "HotTub Blue LED"
+  #   state_topic: "myhome/hottub/status"
+  #   value_template: "{% if value_json.LEDs.Blue == 'on' %}blue_led_on{% else %}blue_led_off{% endif %}"
+  #   command_topic: "myhome/hottub/set"
+  #   payload_on: "blue_led_on"
+  #   payload_off: "blue_led_off"
+  #   optimistic: false
+  
+  # - platform: mqtt
+  #   name: "HotTub Yellow LED"
+  #   state_topic: "myhome/hottub/status"
+  #   value_template: "{% if value_json.LEDs.Yellow == 'on' %}yellow_led_on{% else %}yellow_led_off{% endif %}"
+  #   command_topic: "myhome/hottub/set"
+  #   payload_on: "yellow_led_on"
+  #   payload_off: "yellow_led_off"
+  #   optimistic: false
+
+
+  #v380 IP camera
+  - platform: ffmpeg
+    #input: rtsp://192.168.86.33/live/ch00_0
+    input: rtsp://192.168.86.33/live/ch00_1  # hi-def
+    name: Basement
+    # name: Basement v380
+  - platform: ffmpeg
+    #input: rtsp://192.168.86.56/live/ch00_0
+    input: rtsp://192.168.86.56/live/ch00_1  # hi-def
+    # name: Hall v380
+    name: Hall        
+  # v380 firmware upgrade: http://community.netcamstudio.com/t/v380-stream-url/2778/9
+  # rtsp url here: http://community.netcamstudio.com/t/v380-stream-url/2778/4
+  # ebay link to camera: https://www.ebay.com/itm/323626421368
+
+  #- platform: onvif
+  #  host: 192.168.86.33
+  #  name: Computerroom
+  #  username: !secret onvif_camera_username 
+  #  password: !secret onvif_camera_password  
+  #  port: 554
+
+  # - platform: mjpeg
+  #   mjpeg_url: http://192.168.86.56:2971/camera/stream
+  #   name: WallPanel Camera
+
+  # - platform: generic
+  #   name: Hall
+  #   username: !secret dlink_camera_username 
+  #   password: !secret dlink_camera_password 
+  #   still_image_url: http://192.168.86.64/image/jpeg.cgi
+  #   authentication: basic 
+
+  # - platform: generic
+  #   name: Living Room
+  #   username: !secret dlink_camera_username 
+  #   password: !secret dlink_camera_password 
+  #   still_image_url: http://192.168.86.82/image/jpeg.cgi
+  #   authentication: basic
+  # - platform: generic
+  #   name: Back
+  #   username: !secret dlink_camera_username 
+  #   password: !secret dlink_camera_password 
+  #   still_image_url: http://192.168.86.80/image/jpeg.cgi
+  #   authentication: basic    
+  # - platform: generic
+  #   name: Garage
+  #   username: !secret dlink_camera_username 
+  #   password: !secret dlink_camera_password 
+  #   still_image_url: http://192.168.86.71/image/jpeg.cgi
+  #   authentication: basic    
+  - platform: generic
+    still_image_url: 'https://icons.wxug.com/data/weather-maps/radar/united-states/dayton-ohio-region-current-radar-animation.gif'
+    name: Radar Ohio Current

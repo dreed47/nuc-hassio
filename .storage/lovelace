@@ -1,0 +1,1137 @@
+{
+    "data": {
+        "config": {
+            "background": "center / cover no-repeat url(\"/local/assets/background_dark.jpeg\") fixed",
+            "resources": [
+                {
+                    "type": "js",
+                    "url": "/customcards/github/custom-cards/card-tools.js?track=true"
+                },
+                {
+                    "type": "js",
+                    "url": "/customcards/github/custom-cards/auto-entities.js?track=true"
+                },
+                {
+                    "type": "module",
+                    "url": "/customcards/github/custom-cards/tracker-card.js?track=true"
+                },
+                {
+                    "type": "module",
+                    "url": "/customcards/github/custom-cards/button-card.js?track=true"
+                },
+                {
+                    "type": "module",
+                    "url": "/local/custom-lovelace/pc-card.js?v=0"
+                }
+            ],
+            "title": "HA NUC8i3",
+            "views": [
+                {
+                    "badges": [
+                        "person.david",
+                        "sensor.yr_symbol"
+                    ],
+                    "cards": [
+                        {
+                            "type": "custom:tracker-card"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.zestimate"
+                                },
+                                {
+                                    "entity": "sensor.zestimate_2"
+                                },
+                                {
+                                    "entity": "sensor.current_version"
+                                },
+                                {
+                                    "entity": "sensor.custom_card_tracker"
+                                },
+                                {
+                                    "entity": "camera.radar_ohio_current"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.zestimate",
+                            "name": "898 Fieldstone Dr",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.zestimate_2",
+                            "name": "21485 Route 66",
+                            "type": "sensor"
+                        },
+                        {
+                            "card": {
+                                "show_header_toggle": false,
+                                "title": "Recent Earthquakes within 600 km",
+                                "type": "entities"
+                            },
+                            "filter": {
+                                "include": [
+                                    {
+                                        "attributes": {
+                                            "source": "usgs_earthquakes_feed",
+                                            "type": "earthquake"
+                                        },
+                                        "domain": "geo_location",
+                                        "options": {
+                                            "secondary_info": "status"
+                                        }
+                                    }
+                                ]
+                            },
+                            "show_empty": true,
+                            "type": "custom:auto-entities"
+                        },
+                        {
+                            "entity": "sensor.dining_room_thermostat_temperature",
+                            "max": 100,
+                            "min": 0,
+                            "severity": {
+                                "green": 0,
+                                "red": 0,
+                                "yellow": 0
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                "sensor.dining_room_thermostat_humidity"
+                            ],
+                            "type": "history-graph"
+                        },
+                        {
+                            "title": "Money",
+                            "type": "custom:pc-card"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "elements": [
+                                        {
+                                            "entity": "switch.mantle_light",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "92%",
+                                                "padding": "10px",
+                                                "top": "34%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "switch.sonoff_100052e99c",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "46%",
+                                                "padding": "10px",
+                                                "top": "20%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "switch.02200216ecfabc8c6a02",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "58%",
+                                                "padding": "10px",
+                                                "top": "31%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "switch.02200392dc4f221882c2",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "41%",
+                                                "padding": "10px",
+                                                "top": "30%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "switch.02200216ecfabc8c5eab",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "50%",
+                                                "padding": "10px",
+                                                "top": "41%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "light.floor_light",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "69%",
+                                                "padding": "10px",
+                                                "top": "43%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "light.chair_light",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "92%",
+                                                "padding": "10px",
+                                                "top": "42%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "light.couch_light",
+                                            "image": "/local/assets/icons/light_bulb_off.png",
+                                            "state_filter": {
+                                                "off": "brightness(80%) saturate(0.8)",
+                                                "on": "brightness(130%) saturate(1.5) drop-shadow(0px 0px 10px gold)"
+                                            },
+                                            "state_image": {
+                                                "on": "/local/assets/icons/light_bulb_on.png"
+                                            },
+                                            "style": {
+                                                "left": "70%",
+                                                "padding": "10px",
+                                                "top": "15%",
+                                                "width": "6%"
+                                            },
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "media_player.kitchen_sonos",
+                                            "image": "/local/assets/icons/speaker-off.png",
+                                            "state_image": {
+                                                "playing": "/local/assets/icons/speaker-on.png"
+                                            },
+                                            "style": {
+                                                "left": "42%",
+                                                "top": "38%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "media_player.livingroom_sonos",
+                                            "image": "/local/assets/icons/speaker-off.png",
+                                            "state_image": {
+                                                "playing": "/local/assets/icons/speaker-on.png"
+                                            },
+                                            "style": {
+                                                "left": "90%",
+                                                "top": "11%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "media_player.computerrm_sonos",
+                                            "image": "/local/assets/icons/speaker-off.png",
+                                            "state_image": {
+                                                "playing": "/local/assets/icons/speaker-on.png"
+                                            },
+                                            "style": {
+                                                "left": "80%",
+                                                "top": "78%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "camera.front",
+                                            "image": "/local/assets/icons/camera_730.png",
+                                            "style": {
+                                                "left": "66%",
+                                                "top": "80%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "camera.hall",
+                                            "image": "/local/assets/icons/camera_9.png",
+                                            "style": {
+                                                "left": "72%",
+                                                "top": "69%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "camera.garage2",
+                                            "image": "/local/assets/icons/camera_6.png",
+                                            "style": {
+                                                "left": "20%",
+                                                "top": "46%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "camera.livingroom",
+                                            "image": "/local/assets/icons/camera_9.png",
+                                            "style": {
+                                                "left": "89%",
+                                                "top": "23%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "camera.backporch",
+                                            "image": "/local/assets/icons/camera_130.png",
+                                            "style": {
+                                                "left": "52%",
+                                                "top": "8%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "climate.dining_room",
+                                            "image": "/local/assets/icons/thermostat-box-off.png",
+                                            "state_image": {
+                                                "auto": "/local/assets/icons/thermostat-box-auto.png",
+                                                "cool": "/local/assets/icons/thermostat-box-cool.png",
+                                                "eco": "/local/assets/icons/thermostat-box-eco.png",
+                                                "heat": "/local/assets/icons/thermostat-box-heat.png"
+                                            },
+                                            "style": {
+                                                "left": "48%",
+                                                "top": "58%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "entity": "sensor.dining_room_thermostat_temperature",
+                                            "style": {
+                                                "color": "black",
+                                                "font-family": "Helvetica",
+                                                "font-size": "10px",
+                                                "left": "49%",
+                                                "text-align": "center",
+                                                "top": "54%"
+                                            },
+                                            "type": "state-label"
+                                        },
+                                        {
+                                            "entity": "sensor.dining_room_thermostat_operation_mode",
+                                            "style": {
+                                                "color": "black",
+                                                "font-family": "Helvetica",
+                                                "font-size": "10px",
+                                                "left": "49%",
+                                                "text-align": "center",
+                                                "top": "73%"
+                                            },
+                                            "type": "state-label"
+                                        },
+                                        {
+                                            "entity": "sensor.dining_room_thermostat_humidity",
+                                            "style": {
+                                                "color": "black",
+                                                "font-family": "Helvetica",
+                                                "font-size": "10px",
+                                                "left": "49%",
+                                                "text-align": "center",
+                                                "top": "68%"
+                                            },
+                                            "type": "state-label"
+                                        },
+                                        {
+                                            "entity": "sensor.google_wifi_status",
+                                            "image": "/local/assets/icons/router-wireless.png",
+                                            "state_image": {
+                                                "Online": "/local/assets/icons/router-wireless-online.png"
+                                            },
+                                            "style": {
+                                                "left": "73%",
+                                                "top": "54%",
+                                                "transform": "none",
+                                                "width": "5%"
+                                            },
+                                            "type": "image"
+                                        }
+                                    ],
+                                    "image": "/local/assets/floorplan_first4.png",
+                                    "title": "First Floor",
+                                    "type": "picture-elements"
+                                },
+                                {
+                                    "cards": [
+                                        {
+                                            "elements": [
+                                                {
+                                                    "entity": "camera.backlower",
+                                                    "image": "/local/assets/icons/camera_1030.png",
+                                                    "style": {
+                                                        "left": "33%",
+                                                        "top": "1%",
+                                                        "transform": "none",
+                                                        "width": "5%"
+                                                    },
+                                                    "type": "image"
+                                                },
+                                                {
+                                                    "entity": "camera.basement",
+                                                    "image": "/local/assets/icons/camera_9.png",
+                                                    "style": {
+                                                        "left": "88%",
+                                                        "top": "70%",
+                                                        "transform": "none",
+                                                        "width": "5%"
+                                                    },
+                                                    "type": "image"
+                                                },
+                                                {
+                                                    "entity": "camera.basementoffice",
+                                                    "image": "/local/assets/icons/camera_730.png",
+                                                    "style": {
+                                                        "left": "88%",
+                                                        "top": "12%",
+                                                        "transform": "none",
+                                                        "width": "5%"
+                                                    },
+                                                    "type": "image"
+                                                }
+                                            ],
+                                            "image": "/local/assets/floorplan_basement3.png",
+                                            "title": "Basement",
+                                            "type": "picture-elements"
+                                        },
+                                        {
+                                            "elements": [
+                                                {
+                                                    "entity": "camera.leo",
+                                                    "image": "/local/assets/icons/camera_130.png",
+                                                    "style": {
+                                                        "left": "44%",
+                                                        "top": "66%",
+                                                        "transform": "none",
+                                                        "width": "5%"
+                                                    },
+                                                    "type": "image"
+                                                }
+                                            ],
+                                            "image": "/local/assets/floorplan_second.png",
+                                            "title": "Second Floor",
+                                            "type": "picture-elements"
+                                        }
+                                    ],
+                                    "type": "vertical-stack"
+                                }
+                            ],
+                            "type": "horizontal-stack"
+                        }
+                    ],
+                    "panel": true,
+                    "title": "Floorplan"
+                },
+                {
+                    "badges": [
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                "binary_sensor.dining_room_thermostat_fan",
+                                "binary_sensor.dining_room_thermostat_has_leaf",
+                                "binary_sensor.dining_room_thermostat_is_locked",
+                                "binary_sensor.dining_room_thermostat_is_using_emergency_heat",
+                                "binary_sensor.dining_room_thermostat_online",
+                                "sensor.dining_room_thermostat_humidity",
+                                "binary_sensor.home_away",
+                                "sensor.dining_room_thermostat_operation_mode",
+                                "sensor.dining_room_thermostat_temperature",
+                                "sensor.dining_room_thermostat_target"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Thermostat",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.dining_room",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.waqi_east_high_school_ohio_usa"
+                                },
+                                {
+                                    "entity": "camera.radar_ohio_current"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Radar & Air Quality",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.dark_sky",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                "sensor.google_wifi_uptime",
+                                "sensor.google_wifi_new_version",
+                                "sensor.google_wifi_status",
+                                "sensor.google_wifi_last_restart"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Google Wifi",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "cover.garage_door"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "garage door",
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "Main"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "camera_image": "camera.front",
+                            "camera_view": "live",
+                            "entities": [
+                                "weblink.frontcam"
+                            ],
+                            "title": "Front Wyze",
+                            "type": "picture-glance"
+                        },
+                        {
+                            "camera_image": "camera.backlower",
+                            "camera_view": "live",
+                            "entities": [
+                                "weblink.backlowercam"
+                            ],
+                            "title": "HotTub Xiaomi",
+                            "type": "picture-glance"
+                        },
+                        {
+                            "camera_image": "camera.livingroom",
+                            "camera_view": "live",
+                            "entities": [
+                                "weblink.livingroomcam"
+                            ],
+                            "title": "Livingroom Xiaomi",
+                            "type": "picture-glance"
+                        },
+                        {
+                            "camera_image": "camera.basement",
+                            "entities": [],
+                            "title": "Basement V380",
+                            "type": "picture-glance"
+                        },
+                        {
+                            "camera_image": "camera.garage2",
+                            "camera_view": "live",
+                            "entities": [
+                                "weblink.garagecam"
+                            ],
+                            "title": "Garage Wyzecam",
+                            "type": "picture-glance"
+                        },
+                        {
+                            "camera_image": "camera.backporch",
+                            "camera_view": "live",
+                            "entities": [
+                                "weblink.backporch"
+                            ],
+                            "title": "Back Porch Wyzecam",
+                            "type": "picture-glance"
+                        }
+                    ],
+                    "title": "Cameras"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "camera.front"
+                                },
+                                {
+                                    "entity": "switch.frontcam_h264_rtsp_server"
+                                },
+                                {
+                                    "entity": "switch.frontcam_motion_detection"
+                                },
+                                {
+                                    "entity": "switch.frontcam_motion_tracking"
+                                },
+                                {
+                                    "entity": "switch.frontcam_night_mode"
+                                },
+                                {
+                                    "entity": "switch.frontcam_night_mode_auto"
+                                },
+                                {
+                                    "entity": "camera.frontcam_motion_snapshot"
+                                },
+                                {
+                                    "entity": "binary_sensor.frontcam_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.frontcam_light_sensor"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Front Cam Wyzecam",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "camera.livingroom"
+                                },
+                                {
+                                    "entity": "switch.livingroomcam_h264_rtsp_server"
+                                },
+                                {
+                                    "entity": "switch.livingroomcam_motion_detection"
+                                },
+                                {
+                                    "entity": "switch.livingroomcam_motion_tracking"
+                                },
+                                {
+                                    "entity": "switch.livingroomcam_night_mode"
+                                },
+                                {
+                                    "entity": "switch.livingroomcam_night_mode_auto"
+                                },
+                                {
+                                    "entity": "camera.livingroomcam_motion_snapshot"
+                                },
+                                {
+                                    "entity": "binary_sensor.livingroomcam_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.livingroomcam_light_sensor"
+                                },
+                                {
+                                    "entity": "cover.livingroomcam_move_left_right"
+                                },
+                                {
+                                    "entity": "cover.livingroomcam_move_up_down"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Living Room Cam Xiaomi",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "camera.backlower"
+                                },
+                                {
+                                    "entity": "switch.backlowercam_h264_rtsp_server"
+                                },
+                                {
+                                    "entity": "switch.backlowercam_motion_detection"
+                                },
+                                {
+                                    "entity": "switch.backlowercam_motion_tracking"
+                                },
+                                {
+                                    "entity": "switch.backlowercam_night_mode"
+                                },
+                                {
+                                    "entity": "switch.backlowercam_night_mode_auto"
+                                },
+                                {
+                                    "entity": "camera.backlowercam_motion_snapshot"
+                                },
+                                {
+                                    "entity": "binary_sensor.backlowercam_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.backlowercam_light_sensor"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Hot Tub Cam Wyzecam",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "camera.backporch"
+                                },
+                                {
+                                    "entity": "switch.backporch_h264_rtsp_server"
+                                },
+                                {
+                                    "entity": "switch.backporch_motion_detection"
+                                },
+                                {
+                                    "entity": "switch.backporch_motion_tracking"
+                                },
+                                {
+                                    "entity": "switch.backporch_night_mode"
+                                },
+                                {
+                                    "entity": "switch.backporch_night_mode_auto"
+                                },
+                                {
+                                    "entity": "camera.backporch_motion_snapshot"
+                                },
+                                {
+                                    "entity": "binary_sensor.backporch_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.backporch_light_sensor"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Back Porch Wyzecam",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "camera.garage2"
+                                },
+                                {
+                                    "entity": "switch.garagecam_h264_rtsp_server"
+                                },
+                                {
+                                    "entity": "switch.garagecam_motion_detection"
+                                },
+                                {
+                                    "entity": "switch.garagecam_motion_tracking"
+                                },
+                                {
+                                    "entity": "switch.garagecam_night_mode"
+                                },
+                                {
+                                    "entity": "switch.garagecam_night_mode_auto"
+                                },
+                                {
+                                    "entity": "camera.garagecam_motion_snapshot"
+                                },
+                                {
+                                    "entity": "binary_sensor.garagecam_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.garagecam_light_sensor"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Garagev Wyzecam",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "icon": "mdi:camcorder",
+                                    "name": "FrontCam Wyzecam",
+                                    "type": "weblink",
+                                    "url": "https://frontcam/"
+                                },
+                                {
+                                    "icon": "mdi:camcorder",
+                                    "name": "LivingroomCam Xiaomi",
+                                    "type": "weblink",
+                                    "url": "https://livingroomcam/"
+                                },
+                                {
+                                    "icon": "mdi:camcorder",
+                                    "name": "GarageCam Wyzecam",
+                                    "type": "weblink",
+                                    "url": "https://garagecam/"
+                                },
+                                {
+                                    "icon": "mdi:camcorder",
+                                    "name": "BackLowerCam Xiaomi",
+                                    "type": "weblink",
+                                    "url": "https://backlowercam/"
+                                },
+                                {
+                                    "icon": "mdi:camcorder",
+                                    "name": "BackPorch Wyzecam",
+                                    "type": "weblink",
+                                    "url": "https://backporch/"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Manage Camera",
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "Cam Control"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.davids_location"
+                                },
+                                {
+                                    "entity": "device_tracker.carol_phone"
+                                },
+                                {
+                                    "entity": "sensor.carols_location"
+                                },
+                                {
+                                    "entity": "person.carol"
+                                },
+                                {
+                                    "entity": "person.david"
+                                },
+                                {
+                                    "entity": "device_tracker.davidsiphone"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Whos home",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.david_ipad_battery_level"
+                                },
+                                {
+                                    "entity": "sensor.david_phone_battery_level"
+                                },
+                                {
+                                    "entity": "sensor.carol_phone_battery_level"
+                                }
+                            ],
+                            "title": "Device Info",
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "Presence"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.chair_light"
+                                },
+                                {
+                                    "entity": "light.couch_light"
+                                },
+                                {
+                                    "entity": "light.floor_light"
+                                },
+                                {
+                                    "entity": "switch.022002165ccf7f738157"
+                                },
+                                {
+                                    "entity": "switch.mantle_light"
+                                }
+                            ],
+                            "title": "Livingroom Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.02200216ecfabc8c6a02"
+                                },
+                                {
+                                    "entity": "switch.02200216ecfabc8c5eab"
+                                },
+                                {
+                                    "entity": "switch.02200392dc4f221882c2"
+                                },
+                                {
+                                    "entity": "switch.sonoff_sink_light_relay"
+                                }
+                            ],
+                            "title": "Kitchen Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "action": "more_info",
+                            "color": "auto",
+                            "entity": "light.chair_light",
+                            "icon": "mdi:sofa",
+                            "type": "custom:button-card"
+                        },
+                        {
+                            "entity": "group.all_lights",
+                            "show_state": true,
+                            "type": "custom:button-card"
+                        }
+                    ],
+                    "title": "Lights"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "media_player.livingroom_sonos"
+                                },
+                                {
+                                    "entity": "media_player.kitchen_sonos"
+                                },
+                                {
+                                    "entity": "media_player.computerrm_sonos"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Speakers",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.livingroom_sonos",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.kitchen_sonos",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.computerrm_sonos",
+                            "type": "media-control"
+                        }
+                    ],
+                    "title": "Sonos"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "80%",
+                            "type": "iframe",
+                            "url": "https://icons.wxug.com/data/weather-maps/radar/united-states/dayton-ohio-region-current-radar-animation.gif"
+                        }
+                    ],
+                    "panel": true,
+                    "title": "radar"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "80%",
+                            "type": "iframe",
+                            "url": "https://weather.com/weather/radar/interactive/l/44240:4:US?base=roadsLight&layer=radar&series=observation&zoom=7.29&opacity=70&center=41.69,-82.69"
+                        }
+                    ],
+                    "panel": true,
+                    "title": "radar2"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "weather.dark_sky",
+                            "name": "Weather",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "aspect_ratio": "90%",
+                            "title": "my radar",
+                            "type": "iframe",
+                            "url": "https://embed.windy.com/embed2.html?lat=40.296&lon=-81.749&zoom=7&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=41.145&detailLon=-81.350&metricWind=default&metricTemp=default&radarRange=-1"
+                        }
+                    ],
+                    "title": "Weather"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "icon": "mdi:home-assistant",
+                                    "name": "Home Assistant",
+                                    "type": "weblink",
+                                    "url": "https://www.home-assistant.io/"
+                                },
+                                {
+                                    "icon": "mdi:download",
+                                    "name": "Getting Started",
+                                    "type": "weblink",
+                                    "url": "https://www.home-assistant.io/getting-started/"
+                                },
+                                {
+                                    "icon": "mdi:bookmark",
+                                    "name": "Docs",
+                                    "type": "weblink",
+                                    "url": "https://www.home-assistant.io/docs/"
+                                },
+                                {
+                                    "icon": "mdi:bookmark",
+                                    "name": "Dev Docs",
+                                    "type": "weblink",
+                                    "url": "https://developers.home-assistant.io/"
+                                },
+                                {
+                                    "icon": "mdi:bread-slice",
+                                    "name": "Material Design Icons",
+                                    "type": "weblink",
+                                    "url": "https://materialdesignicons.com/"
+                                },
+                                {
+                                    "icon": "mdi:home-heart",
+                                    "name": "Configuration Examples",
+                                    "type": "weblink",
+                                    "url": "https://www.home-assistant.io/cookbook/"
+                                },
+                                {
+                                    "icon": "mdi:forum",
+                                    "name": "Forum",
+                                    "type": "weblink",
+                                    "url": "https://community.home-assistant.io/"
+                                },
+                                {
+                                    "icon": "mdi:chat",
+                                    "name": "Chat",
+                                    "type": "weblink",
+                                    "url": "https://discord.gg/c5DvZ4e"
+                                },
+                                {
+                                    "icon": "mdi:download",
+                                    "name": "Components",
+                                    "type": "weblink",
+                                    "url": "https://www.home-assistant.io/components/"
+                                },
+                                {
+                                    "icon": "mdi:leaf",
+                                    "name": "Node Red",
+                                    "type": "weblink",
+                                    "url": "https://reedha.duckdns.org:2880/#flow/7b88405.582f2c"
+                                },
+                                {
+                                    "icon": "mdi:download",
+                                    "name": "Home Assistant Podcast",
+                                    "type": "weblink",
+                                    "url": "https://hasspodcast.io/"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Useful Links",
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "Links"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

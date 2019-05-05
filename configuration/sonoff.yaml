@@ -1,0 +1,5 @@
+  username: !secret sonoff_username
+  password: !secret sonoff_password
+  scan_interval: 60 
+  grace_period: 600
+  api_region: 'us'

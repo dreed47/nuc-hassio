@@ -1,0 +1,17 @@
+  - platform: todoist
+    token: !secret todoist_token 
+    #value_template: "{{state_attr('calendar.all_projects', 'all_tasks') | map('title')|join('---') }}" 
+    custom_projects:
+      - name: 'All Projects'
+      - name: 'Due Today'
+        due_date_days: 0
+      - name: 'Due This Week'
+        due_date_days: 7
+      - name: 'Alexa Shopping List'
+        labels:
+          - alexa
+        include_projects:
+          - 'Alexa Shopping List'
+      - name: 'House fix up'
+        include_projects:
+          - 'House fix up'

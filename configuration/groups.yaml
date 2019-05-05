@@ -1,0 +1,231 @@
+default_view:
+  name: Main
+  view: yes
+  entities:
+    - persistent_notification.notification
+    - sun.sun
+    - weather.dark_sky
+    - remote.living_room
+    - configurator.plex_media_server
+    - group.all_remotes
+    - media_player.chromecast_living_room
+    - group.main_nest_group
+    - group.main_wifi_group
+    - group.main_cal_group
+    - group.main_stock_group
+    - sensor.usd_eur
+    - group.fitbit_group
+    - group.airquality_group
+    - dominos.medium_pan
+    - zwave.sigma_designs_uzb_zwave_usb_adapter
+    - zha.zha_osram_lightify_a19_onoffdim_000ccb46
+    - cover.garage_door
+
+sensors_tab:
+  name: Sensors
+  view: yes
+  entities:
+    - sensor.esp_a9e73ec_altitude
+    - sensor.esp_a9e73ec_pressure
+    - sensor.esp_a9e73ec_temperature
+    - sensor.esp_a9ee750_altitude
+    - sensor.esp_a9ee750_pressure
+    - sensor.esp_a9ee750_temperature
+
+presence_tab:
+  name: Presence
+  view: yes
+  entities:
+    - group.presence_group
+    - group.device_info
+
+# geo_tab:
+#   name: Geo
+#   view: yes
+#   entities:
+#     - geo_location.m_02__14km_nw_of_parkfield_ca
+#     - group.all_geo_location_events
+
+
+main_lights_group:
+  name: Lights
+  view: yes
+  entities:
+    - switch.mantle_light
+    - light.chair_light
+    - light.couch_light
+    - light.floor_light
+    - light.osram_lightify_a19_onoffdim_000ccb46_3
+    - switch.02200216ecfabc8c6a02
+    - switch.02200216ecfabc8c5eab
+    - switch.02200392dc4f221882c2
+    - switch.neo_coolcam_power_plug_12a_switch
+    - switch.04200266dc4f22283acd
+    - switch.04200266dc4f222845e0
+    - switch.04200266dc4f222859f6
+    - switch.sonoff_100052e99c
+
+camera_view:
+  name: Cameras
+  view: yes
+  entities:
+    - group.camera_front_group
+    - group.camera_living_room_group
+    - group.camera_back_group
+    - group.camera_garage_group
+    - group.camera_leo_group
+    - group.camera_hall_group
+
+main_sonos_group:
+  name: Sonos
+  view: yes
+  entities:
+    - group.media_player_sonos_computerroom_group
+    - group.media_player_sonos_kitchen_group
+    - group.media_player_sonos_livingroom_group
+
+floorplan:
+  name: Floorplan
+  view: yes
+  entities:
+    - group.zones
+
+weblink_tab:
+  name: Links
+  view: yes
+  entities:
+    - group.weblink_group
+
+# define non-view groups
+
+media_player_sonos_computerroom_group:
+  name: Sonos
+  entities:
+    - media_player.computerrm_sonos
+media_player_sonos_kitchen_group:
+  name: Sonos
+  entities:
+    - media_player.kitchen_sonos
+media_player_sonos_livingroom_group:
+  name: Sonos
+  entities:
+    - media_player.livingroom_sonos
+
+camera_front_group:
+  name: Front
+  entities:
+    - camera.front
+camera_living_room_group:
+  name: Living Room
+  entities:
+    - camera.living_room
+camera_back_group:
+  name: Back
+  entities:
+    - camera.back
+camera_garage_group:
+  name: Garage
+  entities:
+    - camera.garage
+camera_leo_group:
+  name: Leo
+  entities:
+    - camera.leo
+camera_hall_group:
+  name: Hall
+  entities:
+    - camera.hall
+
+weblink_group:
+  name: Links
+  entities:
+    - weblink.materialdesignicons
+    - weblink.the_noun_project
+    - weblink.json_to_yaml
+#    - weblink.mqtt_brooker__cloudmqtt
+    - weblink.mysensors
+    - weblink.ha_components
+    - weblink.wallpanel
+    - weblink.lovelace
+
+
+presence_group:
+  name: Whos home
+  entities:
+    - device_tracker.david_phone
+    - device_tracker.david_ipad
+    - sensor.davids_location
+    - device_tracker.carol_phone
+    - sensor.carols_location
+    - input_boolean.house_guests_home
+    - input_boolean.david_home
+    - input_boolean.carol_home
+    - input_boolean.home_occupied
+
+device_info:
+  name: Device Info
+  entities:
+    - sensor.david_ipad_battery_level
+    - sensor.david_phone_battery_level
+    - sensor.carol_ipad_battery_level
+    - sensor.carol_phone_battery_level
+  
+airquality_group:
+  name: 'Air Quality'
+  entities:
+    - sensor.waqi_east_high_school_ohio_usa
+    
+fitbit_group:
+  name: Fitbit Stats
+  entities:
+    - sensor.steps
+    - sensor.weight
+    
+main_stock_group:
+  name: Stocks
+  entities:
+    - sensor.dow_jones_industrial_average
+    - sensor.sp_500
+
+main_cal_group:
+  name: Shopping/Todo Lists
+  entities:
+    - sensor.todoists_alexa
+    - sensor.todoists_todo
+    
+main_nest_group:
+  name: Thermostat
+  entities:
+    - climate.dining_room
+    - binary_sensor.dining_room_thermostat_fan
+    - binary_sensor.dining_room_thermostat_has_leaf
+    - binary_sensor.dining_room_thermostat_is_locked
+    - binary_sensor.dining_room_thermostat_is_using_emergency_heat
+    - binary_sensor.dining_room_thermostat_online
+    - sensor.dining_room_thermostat_humidity
+    - binary_sensor.home_away
+    - sensor.dining_room_thermostat_operation_mode
+    - sensor.dining_room_thermostat_temperature
+    - sensor.dining_room_thermostat_target
+
+main_wifi_group:
+  name: Google Wifi
+  entities:
+    - sensor.google_wifi_uptime
+    - sensor.google_wifi_new_version
+    - sensor.google_wifi_status
+    - sensor.google_wifi_last_restart
+    
+
+zones:
+  name: Zones
+  entities:
+    - binary_sensor.floorplan    
+
+garage_doors:
+  name: Garage Doors
+  view: no
+  control: hidden
+  # icon: mdi:garage
+  entities:
+    - cover.garage_door # These are named based on my doors, one is double wide the other is single.

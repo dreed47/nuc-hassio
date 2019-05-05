@@ -1,0 +1,10 @@
+  country_code: us
+  first_name: !secret dominos_first_name 
+  last_name: !secret dominos_last_name 
+  email: !secret email  
+  phone: !secret phone 
+  address: !secret address 
+  orders:
+  - name: Medium Pan
+    codes:
+      - P12IPAZA
