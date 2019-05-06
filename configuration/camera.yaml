@@ -22,7 +22,7 @@
     still_image_url: https://192.168.86.40/cgi-bin/currentpic.cgi
     verify_ssl: false
     scan_interval: 5
-    # stream_source: rtsp://192.168.86.40:8554/unicast
+    stream_source: rtsp://192.168.86.40:8554/unicast
     # name: Front Wyzecam
     # url: 'https://frontcam/'
     # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
@@ -35,7 +35,7 @@
     still_image_url: https://192.168.86.32/cgi-bin/currentpic.cgi
     verify_ssl: false
     scan_interval: 5
-    # stream_source: rtsp://192.168.86.32:8554/unicast
+    stream_source: rtsp://192.168.86.32:8554/unicast
     # name: Hot Tub Xiaomi
     # url: 'https://backlowercam/'
     # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
@@ -48,7 +48,7 @@
     still_image_url: https://192.168.86.43/cgi-bin/currentpic.cgi
     verify_ssl: false
     scan_interval: 5
-    # stream_source: rtsp://192.168.86.43:8554/unicast
+    stream_source: rtsp://192.168.86.43:8554/unicast
     # name: Livingroom Xiaomi
     # url: 'https://livingroomcam/'
     # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
@@ -61,7 +61,7 @@
     still_image_url: https://192.168.86.69/cgi-bin/currentpic.cgi
     verify_ssl: false
     scan_interval: 5
-    # stream_source: rtsp://192.168.86.69:8554/unicast
+    stream_source: rtsp://192.168.86.69:8554/unicast
     # name: Back Porch Xiaomi
     # url: 'https://backporch/'
     # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks
@@ -74,7 +74,7 @@
     still_image_url: https://192.168.86.65/cgi-bin/currentpic.cgi
     verify_ssl: false
     scan_interval: 5
-    # stream_source: rtsp://192.168.86.65:8554/unicast
+    stream_source: rtsp://192.168.86.65:8554/unicast
     # name: Garage Wyzecam
     # url: 'https://garagecam/'
     # needed: https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks

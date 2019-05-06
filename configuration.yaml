@@ -23,7 +23,7 @@ sun:
 default_config:
 custom_updater:
 
-# stream:     
+stream:     
 
 ffmpeg:
   ffmpeg_bin: /usr/bin/ffmpeg

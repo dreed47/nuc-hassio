@@ -1120,6 +1120,18 @@
                                     "name": "Home Assistant Podcast",
                                     "type": "weblink",
                                     "url": "https://hasspodcast.io/"
+                                },
+                                {
+                                    "icon": "mdi:github-circle",
+                                    "name": "NUC8i3 Setup Instructions",
+                                    "type": "weblink",
+                                    "url": "https://github.com/dreed47/NUCSetup"
+                                },
+                                {
+                                    "icon": "mdi:github-circle",
+                                    "name": "Hassio Repo of this site",
+                                    "type": "weblink",
+                                    "url": "https://github.com/dreed47/nuc-hassio"
                                 }
                             ],
                             "show_header_toggle": false,
