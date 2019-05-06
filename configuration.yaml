@@ -24,7 +24,6 @@ default_config:
 custom_updater:
 stream:     
 
-
 ffmpeg: !include configuration/ffmpeg.yaml
 frontend: !include configuration/frontend.yaml
 mqtt: !include configuration/mqtt.yaml
