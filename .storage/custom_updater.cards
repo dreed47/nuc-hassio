@@ -16,7 +16,7 @@
         "version": "1.6.0"
     },
     "pc-card": {
-        "dir": "/config/www/custom-lovelace/",
+        "dir": "/config/www/github/custom-cards/",
         "version": "v0.0.3"
     }
 }

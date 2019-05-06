@@ -21,7 +21,7 @@
                 },
                 {
                     "type": "module",
-                    "url": "/local/custom-lovelace/pc-card.js?v=0"
+                    "url": "/customcards/github/custom-cards/pc-card.js?track=true"
                 }
             ],
             "title": "HA NUC8i3",
@@ -34,6 +34,10 @@
                     "cards": [
                         {
                             "type": "custom:tracker-card"
+                        },
+                        {
+                            "title": "Money",
+                            "type": "custom:pc-card"
                         },
                         {
                             "entities": [
@@ -106,10 +110,6 @@
                                 "sensor.dining_room_thermostat_humidity"
                             ],
                             "type": "history-graph"
-                        },
-                        {
-                            "title": "Money",
-                            "type": "custom:pc-card"
                         }
                     ],
                     "path": "default_view",

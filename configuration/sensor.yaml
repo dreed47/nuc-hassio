@@ -5,14 +5,14 @@
       - !secret zillow_property1
       - !secret zillow_property2
 
-  # - platform: personalcapital
-  #   email: !secret pcapital_username
-  #   password: !secret pcapital_password
-  #   unit_of_measurement: USD
-  #   monitored_categories:
-  #     - investment
-  #     - cash
-  #     - other_asset
+  - platform: personalcapital
+    email: !secret pcapital_username
+    password: !secret pcapital_password
+    unit_of_measurement: USD
+    monitored_categories:
+      - investment
+      - cash
+      - other_asset
 
   - platform: mqtt
     state_topic: "sensor/ESP_a9ee750/pressure"
