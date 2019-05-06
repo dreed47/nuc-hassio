@@ -22,7 +22,7 @@ map:
 sun:
 default_config:
 custom_updater:
-stream:     
+stream:
 
 ffmpeg: !include configuration/ffmpeg.yaml
 frontend: !include configuration/frontend.yaml
