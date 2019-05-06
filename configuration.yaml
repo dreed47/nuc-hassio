@@ -22,12 +22,10 @@ map:
 sun:
 default_config:
 custom_updater:
-
 stream:     
 
-ffmpeg:
-  ffmpeg_bin: /usr/bin/ffmpeg
 
+ffmpeg: !include configuration/ffmpeg.yaml
 frontend: !include configuration/frontend.yaml
 mqtt: !include configuration/mqtt.yaml
 person: !include configuration/person.yaml
