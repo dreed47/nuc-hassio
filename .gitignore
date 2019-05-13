@@ -67,3 +67,4 @@ esphome/.esphome/esphome.json
 .storage/person
 .storage/onboarding
 .storage/cloud
+.Trash*

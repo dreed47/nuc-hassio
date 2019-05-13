@@ -48,10 +48,7 @@
                                     "entity": "sensor.zestimate_2"
                                 },
                                 {
-                                    "entity": "sensor.current_version"
-                                },
-                                {
-                                    "entity": "sensor.custom_card_tracker"
+                                    "entity": "sensor.zestimate_3"
                                 },
                                 {
                                     "entity": "camera.radar_ohio_current"
@@ -62,12 +59,12 @@
                         },
                         {
                             "entity": "sensor.zestimate",
-                            "name": "898 Fieldstone Dr",
+                            "name": "21485 Route 66",
                             "type": "sensor"
                         },
                         {
                             "entity": "sensor.zestimate_2",
-                            "name": "21485 Route 66",
+                            "name": "898 Fieldstone Dr",
                             "type": "sensor"
                         },
                         {
@@ -110,6 +107,11 @@
                                 "sensor.dining_room_thermostat_humidity"
                             ],
                             "type": "history-graph"
+                        },
+                        {
+                            "entity": "sensor.zestimate_3",
+                            "name": "745 Lawsonham Rd",
+                            "type": "sensor"
                         }
                     ],
                     "path": "default_view",
@@ -586,7 +588,7 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "cover.garage_door"
+                                    "entity": "cover.garage_door_3"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -1140,6 +1142,52 @@
                         }
                     ],
                     "title": "Links"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.reedweb_net"
+                                },
+                                {
+                                    "entity": "sensor.davidreed_me"
+                                },
+                                {
+                                    "entity": "sensor.cpu_speed"
+                                },
+                                {
+                                    "entity": "sensor.disk_use_percent_home"
+                                },
+                                {
+                                    "entity": "sensor.last_boot"
+                                },
+                                {
+                                    "entity": "sensor.memory_free"
+                                },
+                                {
+                                    "entity": "sensor.memory_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.processor_use"
+                                },
+                                {
+                                    "entity": "sensor.load_1m"
+                                },
+                                {
+                                    "entity": "sensor.load_5m"
+                                },
+                                {
+                                    "entity": "sensor.load_15m"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Whois",
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "system"
                 }
             ]
         }

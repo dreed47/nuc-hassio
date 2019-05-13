@@ -1,9 +1,23 @@
   - platform: version
+  - platform: cpuspeed
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: memory_use_percent
+      - type: last_boot
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+      - type: processor_use 
   - platform: zestimate
     api_key: !secret zwsid
+    scan_interval: 600
     zpid:
       - !secret zillow_property1
       - !secret zillow_property2
+      - !secret zillow_property3
 
   - platform: personalcapital
     email: !secret pcapital_username
@@ -13,6 +27,13 @@
       - investment
       - cash
       - other_asset
+
+  - platform: whois
+    domain: !secret whois_domain1
+    name: !secret whois_domain1_name
+  - platform: whois
+    domain: !secret whois_domain2
+    name: !secret whois_domain2_name
 
   - platform: mqtt
     state_topic: "sensor/ESP_a9ee750/pressure"
