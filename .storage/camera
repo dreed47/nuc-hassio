@@ -2,6 +2,9 @@
     "data": {
         "camera.garage2": {
             "preload_stream": true
+        },
+        "camera.livingroom": {
+            "preload_stream": true
         }
     },
     "key": "camera",

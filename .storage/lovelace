@@ -12,6 +12,10 @@
                     "url": "/customcards/github/custom-cards/auto-entities.js?track=true"
                 },
                 {
+                    "type": "js",
+                    "url": "/customcards/github/custom-cards/day-countdown.js?track=true"
+                },
+                {
                     "type": "module",
                     "url": "/customcards/github/custom-cards/tracker-card.js?track=true"
                 },
@@ -24,17 +28,114 @@
                     "url": "/customcards/github/custom-cards/pc-card.js?track=true"
                 }
             ],
-            "title": "HA NUC8i3",
+            "title": "NUC8i3 HA",
             "views": [
+                {
+                    "badges": [
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "date": "July 5 2019",
+                            "icon_number": 4,
+                            "icon_size": "small",
+                            "icon_url": "https://en.wikipedia.org/wiki/July_16",
+                            "title": "BVI Vacation",
+                            "type": "custom:day-countdown"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "cover.garage_door_3"
+                                },
+                                {
+                                    "entity": "sensor.current_version"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.dining_room_thermostat_fan",
+                                "binary_sensor.dining_room_thermostat_has_leaf",
+                                "binary_sensor.dining_room_thermostat_is_locked",
+                                "binary_sensor.dining_room_thermostat_is_using_emergency_heat",
+                                "binary_sensor.dining_room_thermostat_online",
+                                "sensor.dining_room_thermostat_humidity",
+                                "binary_sensor.home_away",
+                                "sensor.dining_room_thermostat_operation_mode",
+                                "sensor.dining_room_thermostat_temperature",
+                                "sensor.dining_room_thermostat_target"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Thermostat",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.dining_room",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.waqi_east_high_school_ohio_usa"
+                                },
+                                {
+                                    "entity": "camera.radar_ohio_current"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Radar & Air Quality",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.dark_sky",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                "sensor.google_wifi_uptime",
+                                "sensor.google_wifi_new_version",
+                                "sensor.google_wifi_status",
+                                "sensor.google_wifi_last_restart"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Google Wifi",
+                            "type": "entities"
+                        },
+                        {
+                            "card": {
+                                "show_header_toggle": false,
+                                "title": "Recent Earthquakes within 600 km",
+                                "type": "entities"
+                            },
+                            "filter": {
+                                "include": [
+                                    {
+                                        "attributes": {
+                                            "source": "usgs_earthquakes_feed",
+                                            "type": "earthquake"
+                                        },
+                                        "domain": "geo_location",
+                                        "options": {
+                                            "secondary_info": "status"
+                                        }
+                                    }
+                                ]
+                            },
+                            "show_empty": true,
+                            "type": "custom:auto-entities"
+                        }
+                    ],
+                    "title": "Main"
+                },
                 {
                     "badges": [
                         "person.david",
                         "sensor.yr_symbol"
                     ],
                     "cards": [
-                        {
-                            "type": "custom:tracker-card"
-                        },
                         {
                             "title": "Money",
                             "type": "custom:pc-card"
@@ -68,54 +169,13 @@
                             "type": "sensor"
                         },
                         {
-                            "card": {
-                                "show_header_toggle": false,
-                                "title": "Recent Earthquakes within 600 km",
-                                "type": "entities"
-                            },
-                            "filter": {
-                                "include": [
-                                    {
-                                        "attributes": {
-                                            "source": "usgs_earthquakes_feed",
-                                            "type": "earthquake"
-                                        },
-                                        "domain": "geo_location",
-                                        "options": {
-                                            "secondary_info": "status"
-                                        }
-                                    }
-                                ]
-                            },
-                            "show_empty": true,
-                            "type": "custom:auto-entities"
-                        },
-                        {
-                            "entity": "sensor.dining_room_thermostat_temperature",
-                            "max": 100,
-                            "min": 0,
-                            "severity": {
-                                "green": 0,
-                                "red": 0,
-                                "yellow": 0
-                            },
-                            "theme": "default",
-                            "type": "gauge"
-                        },
-                        {
-                            "entities": [
-                                "sensor.dining_room_thermostat_humidity"
-                            ],
-                            "type": "history-graph"
-                        },
-                        {
                             "entity": "sensor.zestimate_3",
                             "name": "745 Lawsonham Rd",
                             "type": "sensor"
                         }
                     ],
                     "path": "default_view",
-                    "title": "Home"
+                    "title": "Finance"
                 },
                 {
                     "badges": [],
@@ -532,73 +592,6 @@
                     "title": "Floorplan"
                 },
                 {
-                    "badges": [
-                        "sun.sun"
-                    ],
-                    "cards": [
-                        {
-                            "entities": [
-                                "binary_sensor.dining_room_thermostat_fan",
-                                "binary_sensor.dining_room_thermostat_has_leaf",
-                                "binary_sensor.dining_room_thermostat_is_locked",
-                                "binary_sensor.dining_room_thermostat_is_using_emergency_heat",
-                                "binary_sensor.dining_room_thermostat_online",
-                                "sensor.dining_room_thermostat_humidity",
-                                "binary_sensor.home_away",
-                                "sensor.dining_room_thermostat_operation_mode",
-                                "sensor.dining_room_thermostat_temperature",
-                                "sensor.dining_room_thermostat_target"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Thermostat",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "climate.dining_room",
-                            "type": "thermostat"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.waqi_east_high_school_ohio_usa"
-                                },
-                                {
-                                    "entity": "camera.radar_ohio_current"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Radar & Air Quality",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "weather.dark_sky",
-                            "type": "weather-forecast"
-                        },
-                        {
-                            "entities": [
-                                "sensor.google_wifi_uptime",
-                                "sensor.google_wifi_new_version",
-                                "sensor.google_wifi_status",
-                                "sensor.google_wifi_last_restart"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Google Wifi",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "cover.garage_door_3"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "garage door",
-                            "type": "entities"
-                        }
-                    ],
-                    "title": "Main"
-                },
-                {
                     "badges": [],
                     "cards": [
                         {
@@ -956,7 +949,7 @@
                                     "entity": "switch.02200392dc4f221882c2"
                                 },
                                 {
-                                    "entity": "switch.sonoff_sink_light_relay"
+                                    "entity": "switch.sonoff_sink_light_relay_2"
                                 }
                             ],
                             "title": "Kitchen Lights",
@@ -1185,6 +1178,9 @@
                             "show_header_toggle": false,
                             "title": "Whois",
                             "type": "entities"
+                        },
+                        {
+                            "type": "custom:tracker-card"
                         }
                     ],
                     "title": "system"

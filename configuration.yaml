@@ -15,6 +15,7 @@ system_health:
 updater:
 conversation:
 recorder:
+  purge_keep_days: 5
 history:
 logbook:
 
