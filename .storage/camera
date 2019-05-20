@@ -1,10 +1,10 @@
 {
     "data": {
         "camera.garage2": {
-            "preload_stream": true
+            "preload_stream": false
         },
         "camera.livingroom": {
-            "preload_stream": true
+            "preload_stream": false
         }
     },
     "key": "camera",
