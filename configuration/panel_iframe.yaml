@@ -19,10 +19,10 @@
   #   title: Log Viewer
   #   icon: mdi:file-document-box
   #   url: !secret logview_url    
-  # motioneye:
-  #   title: motionEye
-  #   icon: mdi:camera
-  #   url: !secret motioneye_url          
+  motioneye:
+    title: motionEye
+    icon: mdi:camera
+    url: !secret motioneye_url          
   # syncthing:
   #   title: Syncthing
   #   icon: mdi:wrench
