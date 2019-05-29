@@ -1,7 +1,7 @@
 {
     "card-tools": {
         "dir": "/config/www/github/custom-cards/",
-        "version": "dae887"
+        "version": "e464e1"
     },
     "auto-entities": {
         "dir": "/config/www/github/custom-cards/",
@@ -13,7 +13,7 @@
     },
     "button-card": {
         "dir": "/config/www/github/custom-cards/",
-        "version": "1.9.0"
+        "version": "1.10.2"
     },
     "pc-card": {
         "dir": "/config/www/github/custom-cards/",
