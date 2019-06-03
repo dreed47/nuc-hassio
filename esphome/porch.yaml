@@ -1,4 +1,4 @@
-esphomeyaml:
+esphome:
   name: porch
   platform: ESP8266
   board: d1_mini

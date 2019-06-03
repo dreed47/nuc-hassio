@@ -11,10 +11,10 @@
   #   title: Terminal
   #   icon: mdi:console
   #   url: !secret terminal_url     
-  esphome:
-    title: ESPHome
-    icon: mdi:chip
-    url: !secret esphome_url          
+  # esphome:
+  #   title: ESPHome
+  #   icon: mdi:chip
+  #   url: !secret esphome_url          
   # logview:
   #   title: Log Viewer
   #   icon: mdi:file-document-box

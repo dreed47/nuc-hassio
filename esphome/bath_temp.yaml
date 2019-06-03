@@ -1,4 +1,4 @@
-esphomeyaml:
+esphome:
   name: bath_temp
   platform: ESP32
   board: esp-wrover-kit

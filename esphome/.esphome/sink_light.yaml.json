@@ -1,16 +1,25 @@
 {
-  "use_legacy_ota": false, 
   "arduino_version": "espressif8266@1.8.0", 
   "address": "sink_light.local", 
   "storage_version": 1, 
-  "esphome_version": "1.12.2", 
+  "esphome_version": "1.13.4", 
   "build_path": "/config/esphome/sink_light", 
   "name": "sink_light", 
+  "loaded_integrations": [
+    "api", 
+    "binary_sensor", 
+    "esphome", 
+    "gpio", 
+    "json", 
+    "logger", 
+    "mqtt", 
+    "network", 
+    "ota", 
+    "status_led", 
+    "switch", 
+    "wifi"
+  ], 
   "firmware_bin_path": "/data/sink_light/.pioenvs/sink_light/firmware.bin", 
-  "esphome_core_version": {
-    "tag": "v1.12.2", 
-    "repository": "https://github.com/esphome/esphome-core.git"
-  }, 
   "board": "esp01_1m", 
   "esp_platform": "ESP8266", 
   "src_version": 1
