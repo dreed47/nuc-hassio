@@ -13,7 +13,7 @@
     },
     "button-card": {
         "dir": "/config/www/github/custom-cards/",
-        "version": "1.10.2"
+        "version": "1.11.0"
     },
     "pc-card": {
         "dir": "/config/www/github/custom-cards/",
