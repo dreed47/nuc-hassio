@@ -23,6 +23,10 @@
     title: motionEye
     icon: mdi:camera
     url: !secret motioneye_url          
+  # motioneye_balena:
+  #   title: motionEye_Balena
+  #   icon: mdi:camera
+  #   url: !secret motioneye_url_balena          
   # syncthing:
   #   title: Syncthing
   #   icon: mdi:wrench
