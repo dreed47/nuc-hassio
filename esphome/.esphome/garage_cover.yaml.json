@@ -2,7 +2,7 @@
   "arduino_version": "espressif8266@1.8.0", 
   "address": "garage_cover.local", 
   "storage_version": 1, 
-  "esphome_version": "1.13.5", 
+  "esphome_version": "1.13.6", 
   "build_path": "/config/esphome/garage_cover", 
   "name": "garage_cover", 
   "loaded_integrations": [

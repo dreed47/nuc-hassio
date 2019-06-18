@@ -1000,9 +1000,13 @@
                         {
                             "entity": "media_player.computerrm_sonos",
                             "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.plex_chrome_4",
+                            "type": "media-control"
                         }
                     ],
-                    "title": "Sonos"
+                    "title": "Media"
                 },
                 {
                     "badges": [],
