@@ -22,7 +22,11 @@
   motioneye:
     title: motionEye
     icon: mdi:camera
-    url: !secret motioneye_url          
+    url: !secret motioneye_url 
+  #plex:
+  #  title: plex
+  #  icon: mdi:tv
+  #  url: !secret plex_url         
   # motioneye_balena:
   #   title: motionEye_Balena
   #   icon: mdi:camera
