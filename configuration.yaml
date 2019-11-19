@@ -44,7 +44,7 @@ device_tracker: !include configuration/device_tracker.yaml
 owntracks: !include configuration/owntracks.yaml
 tts: !include configuration/tts.yaml
 zone: !include configuration/zone.yaml
-panel_custom: !include configuration/panel_custom.yaml
+#panel_custom: !include configuration/panel_custom.yaml
 weblink: !include configuration/weblink.yaml
 
 # input_boolean: !include configuration/input_boolean.yaml
@@ -61,5 +61,5 @@ weblink: !include configuration/weblink.yaml
 # input_select: !include configuration/input_select.yaml
 # dominos: !include configuration/dominos.yaml
 # calendar: !include configuration/calendar.yaml
-# dyson: !include configuration/dyson.yaml
+dyson: !include configuration/dyson.yaml
 # sonoff: !include configuration/sonoff.yaml

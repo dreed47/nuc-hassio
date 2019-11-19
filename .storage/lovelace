@@ -36,20 +36,18 @@
                     ],
                     "cards": [
                         {
-                            "date": "July 5 2019",
-                            "icon_number": 4,
-                            "icon_size": "small",
-                            "icon_url": "https://en.wikipedia.org/wiki/July_16",
-                            "title": "BVI Vacation",
-                            "type": "custom:day-countdown"
-                        },
-                        {
                             "entities": [
                                 {
                                     "entity": "cover.garage_door_3"
                                 },
                                 {
                                     "entity": "sensor.current_version"
+                                },
+                                {
+                                    "entity": "air_quality.living_room"
+                                },
+                                {
+                                    "entity": "fan.living_room"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -57,32 +55,11 @@
                         },
                         {
                             "entities": [
-                                "binary_sensor.dining_room_thermostat_fan",
-                                "binary_sensor.dining_room_thermostat_has_leaf",
-                                "binary_sensor.dining_room_thermostat_is_locked",
-                                "binary_sensor.dining_room_thermostat_is_using_emergency_heat",
-                                "binary_sensor.dining_room_thermostat_online",
-                                "sensor.dining_room_thermostat_humidity",
-                                "binary_sensor.home_away",
-                                "sensor.dining_room_thermostat_operation_mode",
-                                "sensor.dining_room_thermostat_temperature",
-                                "sensor.dining_room_thermostat_target"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Thermostat",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "climate.dining_room",
-                            "type": "thermostat"
-                        },
-                        {
-                            "entities": [
                                 {
                                     "entity": "sensor.waqi_east_high_school_ohio_usa"
                                 },
                                 {
-                                    "entity": "camera.radar_ohio_current"
+                                    "entity": "camera.backlower"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -1000,10 +977,6 @@
                         {
                             "entity": "media_player.computerrm_sonos",
                             "type": "media-control"
-                        },
-                        {
-                            "entity": "media_player.plex_chrome_4",
-                            "type": "media-control"
                         }
                     ],
                     "title": "Media"
@@ -1054,6 +1027,12 @@
                     "cards": [
                         {
                             "entities": [
+                                {
+                                    "icon": "mdi:home-assistant",
+                                    "name": "Home Assistant Cast",
+                                    "type": "weblink",
+                                    "url": "https://cast.home-assistant.io/"
+                                },
                                 {
                                     "icon": "mdi:home-assistant",
                                     "name": "Home Assistant",
@@ -1147,9 +1126,6 @@
                             "entities": [
                                 {
                                     "entity": "sensor.reedweb_net"
-                                },
-                                {
-                                    "entity": "sensor.davidreed_me"
                                 },
                                 {
                                     "entity": "sensor.cpu_speed"

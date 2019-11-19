@@ -1,11 +1,11 @@
 {
     "card-tools": {
         "dir": "/config/www/github/custom-cards/",
-        "version": "e464e1"
+        "version": "0efed8"
     },
     "auto-entities": {
         "dir": "/config/www/github/custom-cards/",
-        "version": "8057bd"
+        "version": "4f2189"
     },
     "tracker-card": {
         "dir": "/config/www/github/custom-cards/",

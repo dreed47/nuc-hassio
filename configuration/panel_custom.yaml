@@ -3,11 +3,11 @@
   #   sidebar_icon: mdi:home
   #   url_path: floorplan
   #   config: !include floorplan.yaml
-  - name: snapshots
-    sidebar_title: Cam Snapshots
-    sidebar_icon: mdi:hand-pointing-right
-    url_path: snapshots
-    config: !include snapshots.yaml
+  # - name: snapshots
+  #   sidebar_title: Cam Snapshots
+  #   sidebar_icon: mdi:hand-pointing-right
+  #   url_path: snapshots
+  #   config: !include snapshots.yaml
 
     #config: !include remote.yaml    
   # - name: hello2

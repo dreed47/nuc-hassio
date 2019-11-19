@@ -15,9 +15,19 @@
     api_key: !secret zwsid
     scan_interval: 600
     zpid:
-      - !secret zillow_property1
-      - !secret zillow_property2
+      - !secret zillow_property1  
       - !secret zillow_property3
+      - !secret zillow_property2
+
+  - platform: alpha_vantage
+    api_key: 6D2O19VSGXMFP51S
+    symbols:
+      - symbol: GOOGL
+        name: Google
+    foreign_exchange:
+      - name: USD_EUR
+        from: USD
+        to: EUR
 
   - platform: personalcapital
     email: !secret pcapital_username
