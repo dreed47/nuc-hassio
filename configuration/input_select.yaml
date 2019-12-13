@@ -24,4 +24,9 @@
       - 'darkorange'
     initial: 'dark_blue'
     #icon: 'mdi:palette'
-
+  music_controller:
+    name: Music Controller
+    options:
+      - livingroom
+      - kitchen
+      - computerroom

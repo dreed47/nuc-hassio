@@ -1,0 +1,13 @@
+- id: '1575667732905'
+  alias: sonons1
+  description: ''
+  trigger:
+  - hours: '5'
+    minutes: '0'
+    platform: time_pattern
+    seconds: '0'
+  condition: []
+  action:
+  - alias: ''
+    data: {}
+    service: media_player.media_next_track

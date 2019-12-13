@@ -48,6 +48,9 @@
                                 },
                                 {
                                     "entity": "fan.living_room"
+                                },
+                                {
+                                    "entity": "sensor.todoists_alexa"
                                 }
                             ],
                             "show_header_toggle": false,
