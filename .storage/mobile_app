@@ -1,0 +1,232 @@
+{
+    "data": {
+        "binary_sensor": {},
+        "deleted_ids": [],
+        "sensor": {
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Stationary"
+                    ]
+                },
+                "icon": "mdi:human-male",
+                "name": "Activity",
+                "state": "Stationary",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Charging"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-100",
+                "name": "Battery Level",
+                "state": 100,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 100
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-100",
+                "name": "Battery State",
+                "state": "Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "70:3a:cb:15:c6:7a",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "MeshNet21",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "OH",
+                    "Areas Of Interest": "N/A",
+                    "Country": "United States",
+                    "ISO Country Code": "US",
+                    "Inland Water": "N/A",
+                    "Locality": "Kent",
+                    "Location": [
+                        41.161041259765625,
+                        -81.38464315384411
+                    ],
+                    "Name": "898 Fieldstone Dr",
+                    "Ocean": "N/A",
+                    "Postal Code": "44240",
+                    "Sub Administrative Area": "Portage",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "898",
+                    "Thoroughfare": "Fieldstone Dr",
+                    "Time Zone": "America/New_York"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "898 Fieldstone Dr\nKent OH 44240\nUnited States",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Initial",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "15ee1ddea1c4cdeed61e9f1aa227c6c1000d2846a56aa6e95e55626306816d0e"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Stationary"
+                    ]
+                },
+                "icon": "mdi:human-male",
+                "name": "Activity",
+                "state": "Stationary",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Charging"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-60",
+                "name": "Battery Level",
+                "state": 65,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 65
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-60",
+                "name": "Battery State",
+                "state": "Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "70:3a:cb:15:c6:7a",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "MeshNet21",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "OH",
+                    "Areas Of Interest": "N/A",
+                    "Country": "United States",
+                    "ISO Country Code": "US",
+                    "Inland Water": "N/A",
+                    "Locality": "Kent",
+                    "Location": [
+                        41.160919189453125,
+                        -81.38499772783366
+                    ],
+                    "Name": "898 Fieldstone Dr",
+                    "Ocean": "N/A",
+                    "Postal Code": "44240",
+                    "Sub Administrative Area": "Portage",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "898",
+                    "Thoroughfare": "Fieldstone Dr",
+                    "Time Zone": "America/New_York"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "898 Fieldstone Dr\nKent OH 44240\nUnited States",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            },
+            "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Background Fetch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
+            }
+        }
+    },
+    "key": "mobile_app",
+    "version": 1
+}
