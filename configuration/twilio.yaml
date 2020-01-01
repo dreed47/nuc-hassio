@@ -1,0 +1,4 @@
+  #account_sid: !secret twilio_test_account_sid
+  #auth_token: !secret twilio_test_auth_token
+  account_sid: !secret twilio_live_account_sid
+  auth_token: !secret twilio_live_auth_token

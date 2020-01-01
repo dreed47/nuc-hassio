@@ -62,4 +62,6 @@ weblink: !include configuration/weblink.yaml
 # dominos: !include configuration/dominos.yaml
 # calendar: !include configuration/calendar.yaml
 dyson: !include configuration/dyson.yaml
+twilio: !include configuration/twilio.yaml
+notify: !include configuration/notify.yaml
 # sonoff: !include configuration/sonoff.yaml

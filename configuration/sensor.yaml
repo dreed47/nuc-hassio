@@ -37,6 +37,7 @@
       - investment
       - cash
       - other_asset
+      - other_liability
 
   - platform: whois
     domain: !secret whois_domain1

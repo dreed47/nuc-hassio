@@ -1,0 +1,8 @@
+  - name: 'twilio_sms'
+    platform: twilio_sms
+    from_number: !secret twilio_live_from_number
+    #from_number: !secret twilio_test_from_number
+  - name: 'twilio_call'
+    platform: twilio_call
+    from_number: !secret twilio_live_from_number
+    #from_number: !secret twilio_test_from_number
