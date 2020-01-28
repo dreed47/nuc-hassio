@@ -46,6 +46,7 @@ tts: !include configuration/tts.yaml
 zone: !include configuration/zone.yaml
 #panel_custom: !include configuration/panel_custom.yaml
 weblink: !include configuration/weblink.yaml
+apple_tv: !include configuration/apple_tv.yaml
 
 # input_boolean: !include configuration/input_boolean.yaml
 # zwave: !include configuration/zwave.yaml

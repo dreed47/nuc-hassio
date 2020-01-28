@@ -119,12 +119,12 @@
                 "attributes": {
                     "Confidence": "High",
                     "Types": [
-                        "Stationary"
+                        "Unknown"
                     ]
                 },
-                "icon": "mdi:human-male",
+                "icon": "mdi:help-circle",
                 "name": "Activity",
-                "state": "Stationary",
+                "state": "Unknown",
                 "type": "sensor",
                 "unique_id": "activity",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -137,7 +137,7 @@
                 "device_class": "battery",
                 "icon": "mdi:battery-charging-60",
                 "name": "Battery Level",
-                "state": 65,
+                "state": 75,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -146,7 +146,7 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 65
+                    "Battery Level": 75
                 },
                 "device_class": "battery",
                 "icon": "mdi:battery-charging-60",
@@ -161,7 +161,7 @@
                 "attributes": {},
                 "icon": "mdi:wifi-star",
                 "name": "BSSID",
-                "state": "70:3a:cb:15:c6:7a",
+                "state": "cc:40:d0:94:15:38",
                 "type": "sensor",
                 "unique_id": "connectivity_bssid",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -181,7 +181,7 @@
                 "attributes": {},
                 "icon": "mdi:wifi",
                 "name": "SSID",
-                "state": "MeshNet21",
+                "state": "Salvo Net5G",
                 "type": "sensor",
                 "unique_id": "connectivity_ssid",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -189,28 +189,28 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_geocoded_location": {
                 "added": true,
                 "attributes": {
-                    "Administrative Area": "OH",
+                    "Administrative Area": "PA",
                     "Areas Of Interest": "N/A",
                     "Country": "United States",
                     "ISO Country Code": "US",
                     "Inland Water": "N/A",
-                    "Locality": "Kent",
+                    "Locality": "Shippenville",
                     "Location": [
-                        41.160919189453125,
-                        -81.38499772783366
+                        41.24401207214667,
+                        -79.4240171276484
                     ],
-                    "Name": "898 Fieldstone Dr",
+                    "Name": "122 Oakwood Ln",
                     "Ocean": "N/A",
-                    "Postal Code": "44240",
-                    "Sub Administrative Area": "Portage",
+                    "Postal Code": "16254",
+                    "Sub Administrative Area": "Clarion",
                     "Sub Locality": "N/A",
-                    "Sub Thoroughfare": "898",
-                    "Thoroughfare": "Fieldstone Dr",
+                    "Sub Thoroughfare": "122",
+                    "Thoroughfare": "Oakwood Ln",
                     "Time Zone": "America/New_York"
                 },
                 "icon": "mdi:map",
                 "name": "Geocoded Location",
-                "state": "898 Fieldstone Dr\nKent OH 44240\nUnited States",
+                "state": "122 Oakwood Ln\nShippenville PA 16254\nUnited States",
                 "type": "sensor",
                 "unique_id": "geocoded_location",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -220,7 +220,7 @@
                 "attributes": {},
                 "icon": "mdi:cellphone-wireless",
                 "name": "Last Update Trigger",
-                "state": "Background Fetch",
+                "state": "Significant Location Change",
                 "type": "sensor",
                 "unique_id": "last_update_trigger",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
