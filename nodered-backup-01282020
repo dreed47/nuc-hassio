@@ -502,6 +502,14 @@
         "username": "dreed47"
     },
     {
+        "id": "1e9ee8bf.886be7",
+        "type": "alexa-smart-home-v3-conf",
+        "z": "",
+        "username": "dreed47",
+        "mqttserver": "mq-red.cb-net.co.uk",
+        "webapiurl": "red.cb-net.co.uk"
+    },
+    {
         "id": "d48f152c.b5a778",
         "type": "inject",
         "z": "c8fdd34b.352dd",
@@ -4976,12 +4984,12 @@
         "id": "f737eb3a.7916e8",
         "type": "inject",
         "z": "f06ede57.cc95c",
-        "name": "run @ 8:15 AM",
+        "name": "run @ 8:30 AM",
         "topic": "",
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "15 08 * * *",
+        "crontab": "30 08 * * *",
         "once": false,
         "onceDelay": 0.1,
         "x": 120,
@@ -5034,8 +5042,8 @@
         "output_location": "payload",
         "output_location_type": "msg",
         "mustacheAltTags": false,
-        "x": 570,
-        "y": 540,
+        "x": 510,
+        "y": 520,
         "wires": [
             []
         ]
@@ -5364,7 +5372,7 @@
         "id": "1e49599b.5d21d6",
         "type": "inject",
         "z": "f06ede57.cc95c",
-        "name": "",
+        "name": "TEST ONLY",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -5372,11 +5380,11 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 200,
-        "y": 200,
+        "x": 830,
+        "y": 700,
         "wires": [
             [
-                "2729b536.a4aaba"
+                "1abf7d5f.ec2453"
             ]
         ]
     },
@@ -5385,14 +5393,14 @@
         "type": "debug",
         "z": "f06ede57.cc95c",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "true",
         "targetType": "full",
-        "x": 1150,
-        "y": 320,
+        "x": 1610,
+        "y": 60,
         "wires": []
     },
     {
@@ -5418,24 +5426,7 @@
         "y": 160,
         "wires": [
             [
-                "465f3beb.d3f034"
-            ]
-        ]
-    },
-    {
-        "id": "465f3beb.d3f034",
-        "type": "function",
-        "z": "f06ede57.cc95c",
-        "name": "select a random sonos source",
-        "func": "\nvar source_list = [];\n\nvar source_list_in = msg.payload[0].attributes.source_list;\n\nvar randomItem = source_list_in[Math.floor(Math.random()*source_list_in.length)]\n\nmsg.source_list = msg.payload[0].attributes.source_list;\nmsg.randomItem = randomItem;\n\nmsg.payload = {\n    data: {\n      entity_id: 'media_player.livingroom_sonos',\n      source: randomItem\n    }\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 970,
-        "y": 240,
-        "wires": [
-            [
-                "524d9e01.88862",
-                "44784346.6f59cc"
+                "574648cb.aefd68"
             ]
         ]
     },
@@ -5456,8 +5447,8 @@
         "output_location": "payload",
         "output_location_type": "msg",
         "mustacheAltTags": false,
-        "x": 1160,
-        "y": 160,
+        "x": 1060,
+        "y": 120,
         "wires": [
             []
         ]
@@ -5491,7 +5482,7 @@
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "00 04 * * 1,2,3,4,5",
+        "crontab": "00 16 * * 1,2,3,4,5",
         "once": false,
         "onceDelay": 0.1,
         "x": 830,
@@ -5513,14 +5504,160 @@
         "service_domain": "media_player",
         "service": "select_source",
         "entityId": "media_player.livingroom_sonos",
-        "data": "{\"entity_id\":\"media_player.livingroom_sonos\",\"source\":\"57 - No Shoes Radio\"}",
+        "data": "{\"entity_id\":\"media_player.livingroom_sonos\",\"source\":\"57 - No Shoes Radio -fav\"}",
         "dataType": "json",
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
         "mustacheAltTags": false,
-        "x": 1120,
+        "x": 1340,
         "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c203b10a.05d5c",
+        "type": "alexa-smart-home-v3",
+        "z": "f06ede57.cc95c",
+        "conf": "1e9ee8bf.886be7",
+        "device": "6761",
+        "acknowledge": true,
+        "name": "jimmy hoffa",
+        "topic": "",
+        "x": 670,
+        "y": 60,
+        "wires": [
+            [
+                "2729b536.a4aaba",
+                "524d9e01.88862"
+            ]
+        ]
+    },
+    {
+        "id": "1abf7d5f.ec2453",
+        "type": "ha-get-entities",
+        "z": "f06ede57.cc95c",
+        "server": "8e96e05b.63b15",
+        "name": "get LivingRoom Sonos entity",
+        "rules": [
+            {
+                "property": "attributes.friendly_name",
+                "logic": "is",
+                "value": "LivingRoom Sonos",
+                "valueType": "str"
+            }
+        ],
+        "output_type": "array",
+        "output_empty_results": false,
+        "output_location_type": "msg",
+        "output_location": "payload",
+        "output_results_count": 1,
+        "x": 1120,
+        "y": 700,
+        "wires": [
+            [
+                "47416b6d.083cb4"
+            ]
+        ]
+    },
+    {
+        "id": "47416b6d.083cb4",
+        "type": "function",
+        "z": "f06ede57.cc95c",
+        "name": "select a random sonos source",
+        "func": "\n//var source_list = [];\n//var fav_source_list = [];\n\nvar source_list_all = msg.payload[0].attributes.source_list;\nvar source_list_in = [];\n\nfor(let i = 0; i < source_list_all.length; i++){\n   if (source_list_all[i].endsWith(\"-fav\")) {\n     source_list_in.push(source_list_all[i]);\n   }\n}\n\nvar randomItem = source_list_in[Math.floor(Math.random()*source_list_in.length)]\n\nmsg.source_list = msg.payload[0].attributes.source_list;\nmsg.randomItem = randomItem;\n//msg.fav_list = fav_source_list;\n\nmsg.payload = {\n    data: {\n      entity_id: 'media_player.livingroom_sonos',\n      source: randomItem\n    }\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1450,
+        "y": 720,
+        "wires": [
+            [
+                "524d9e01.88862"
+            ]
+        ]
+    },
+    {
+        "id": "574648cb.aefd68",
+        "type": "function",
+        "z": "f06ede57.cc95c",
+        "name": "select a random sonos source",
+        "func": "\n//var source_list = [];\n//var fav_source_list = [];\n\nvar source_list_all = msg.payload[0].attributes.source_list;\nvar source_list_in = [];\n\nfor(let i = 0; i < source_list_all.length; i++){\n   if (source_list_all[i].endsWith(\"-fav\")) {\n     source_list_in.push(source_list_all[i]);\n   }\n}\n\nvar randomItem = source_list_in[Math.floor(Math.random()*source_list_in.length)]\n\nmsg.source_list = msg.payload[0].attributes.source_list;\nmsg.randomItem = randomItem;\n//msg.fav_list = fav_source_list;\n\nmsg.payload = {\n    data: {\n      entity_id: 'media_player.livingroom_sonos',\n      source: randomItem\n    }\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 990,
+        "y": 300,
+        "wires": [
+            [
+                "524d9e01.88862",
+                "44784346.6f59cc"
+            ]
+        ]
+    },
+    {
+        "id": "17017d9a.fea9a2",
+        "type": "inject",
+        "z": "f06ede57.cc95c",
+        "name": "run @ 7:30 AM",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "30 07 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 820,
+        "y": 540,
+        "wires": [
+            [
+                "451a798d.1e0408",
+                "9ce20080.f2667",
+                "54b6cfa6.d4f0c"
+            ]
+        ]
+    },
+    {
+        "id": "451a798d.1e0408",
+        "type": "api-call-service",
+        "z": "f06ede57.cc95c",
+        "name": "sonos join all",
+        "server": "8e96e05b.63b15",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "sonos",
+        "service": "join",
+        "entityId": "media_player.livingroom_sonos",
+        "data": "{\"master\":\"media_player.livingroom_sonos\",\"entity_id\":[\"media_player.computerrm_sonos\",\"media_player.kitchen_sonos\"]}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "mustacheAltTags": false,
+        "x": 1250,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54b6cfa6.d4f0c",
+        "type": "api-call-service",
+        "z": "f06ede57.cc95c",
+        "name": "sonos set volume to .7",
+        "server": "8e96e05b.63b15",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "media_player",
+        "service": "volume_set",
+        "entityId": "media_player.livingroom_sonos",
+        "data": "{\"entity_id\":[\"media_player.computerrm_sonos\",\"media_player.livingroom_sonos\",\"media_player.kitchen_sonos\"],\"volume_level\":0.07}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "mustacheAltTags": false,
+        "x": 1280,
+        "y": 580,
         "wires": [
             []
         ]
