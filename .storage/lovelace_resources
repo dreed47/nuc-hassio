@@ -1,0 +1,38 @@
+{
+    "data": {
+        "items": [
+            {
+                "id": "3942085b90bf4fe8a076a1879f1e7681",
+                "type": "js",
+                "url": "/customcards/github/custom-cards/card-tools.js?track=true"
+            },
+            {
+                "id": "905db60537d6473e991559865705cf57",
+                "type": "js",
+                "url": "/customcards/github/custom-cards/auto-entities.js?track=true"
+            },
+            {
+                "id": "c610f77476af4970a5362981c231a388",
+                "type": "js",
+                "url": "/customcards/github/custom-cards/day-countdown.js?track=true"
+            },
+            {
+                "id": "163a5d10b94142b0994956cccd2a6ab4",
+                "type": "module",
+                "url": "/customcards/github/custom-cards/tracker-card.js?track=true"
+            },
+            {
+                "id": "77ac151bf9ab43c0a29e16454112698f",
+                "type": "module",
+                "url": "/customcards/github/custom-cards/button-card.js?track=true"
+            },
+            {
+                "id": "c3fa3d4f334747ef84e8f2b2d566a2f7",
+                "type": "module",
+                "url": "/customcards/github/custom-cards/pc-card.js?track=true"
+            }
+        ]
+    },
+    "key": "lovelace_resources",
+    "version": 1
+}

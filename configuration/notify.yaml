@@ -6,3 +6,6 @@
     platform: twilio_call
     from_number: !secret twilio_live_from_number
     #from_number: !secret twilio_test_from_number
+  - name: telegram_notify
+    platform: telegram
+    chat_id: 1224496576

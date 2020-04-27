@@ -45,7 +45,7 @@ owntracks: !include configuration/owntracks.yaml
 tts: !include configuration/tts.yaml
 zone: !include configuration/zone.yaml
 #panel_custom: !include configuration/panel_custom.yaml
-weblink: !include configuration/weblink.yaml
+# weblink: !include configuration/weblink.yaml
 apple_tv: !include configuration/apple_tv.yaml
 
 # input_boolean: !include configuration/input_boolean.yaml
@@ -65,4 +65,5 @@ apple_tv: !include configuration/apple_tv.yaml
 dyson: !include configuration/dyson.yaml
 twilio: !include configuration/twilio.yaml
 notify: !include configuration/notify.yaml
+telegram_bot: !include configuration/telegram_bot.yaml
 # sonoff: !include configuration/sonoff.yaml

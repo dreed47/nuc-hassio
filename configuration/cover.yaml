@@ -9,3 +9,6 @@
     state_closed: "closed"
     #optomistic: false
     retain: false
+  - platform: myq
+    username: !secret myq_username
+    password: !secret myq_password    

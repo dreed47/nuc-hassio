@@ -119,12 +119,12 @@
                 "attributes": {
                     "Confidence": "High",
                     "Types": [
-                        "Unknown"
+                        "Stationary"
                     ]
                 },
-                "icon": "mdi:help-circle",
+                "icon": "mdi:human-male",
                 "name": "Activity",
-                "state": "Unknown",
+                "state": "Stationary",
                 "type": "sensor",
                 "unique_id": "activity",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -132,12 +132,12 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_level": {
                 "added": true,
                 "attributes": {
-                    "Battery State": "Charging"
+                    "Battery State": "Not Charging"
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-charging-60",
+                "icon": "mdi:battery",
                 "name": "Battery Level",
-                "state": 75,
+                "state": 100,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -146,12 +146,12 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 75
+                    "Battery Level": 100
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-charging-60",
+                "icon": "mdi:battery",
                 "name": "Battery State",
-                "state": "Charging",
+                "state": "Not Charging",
                 "type": "sensor",
                 "unique_id": "battery_state",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -161,7 +161,7 @@
                 "attributes": {},
                 "icon": "mdi:wifi-star",
                 "name": "BSSID",
-                "state": "cc:40:d0:94:15:38",
+                "state": "70:3a:cb:15:c9:50",
                 "type": "sensor",
                 "unique_id": "connectivity_bssid",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -181,7 +181,7 @@
                 "attributes": {},
                 "icon": "mdi:wifi",
                 "name": "SSID",
-                "state": "Salvo Net5G",
+                "state": "MeshNet21",
                 "type": "sensor",
                 "unique_id": "connectivity_ssid",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -189,28 +189,28 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_geocoded_location": {
                 "added": true,
                 "attributes": {
-                    "Administrative Area": "PA",
+                    "Administrative Area": "OH",
                     "Areas Of Interest": "N/A",
                     "Country": "United States",
                     "ISO Country Code": "US",
                     "Inland Water": "N/A",
-                    "Locality": "Shippenville",
+                    "Locality": "Kent",
                     "Location": [
-                        41.24401207214667,
-                        -79.4240171276484
+                        41.16099299898516,
+                        -81.38513261306244
                     ],
-                    "Name": "122 Oakwood Ln",
+                    "Name": "902 Fieldstone Dr",
                     "Ocean": "N/A",
-                    "Postal Code": "16254",
-                    "Sub Administrative Area": "Clarion",
+                    "Postal Code": "44240",
+                    "Sub Administrative Area": "Portage",
                     "Sub Locality": "N/A",
-                    "Sub Thoroughfare": "122",
-                    "Thoroughfare": "Oakwood Ln",
+                    "Sub Thoroughfare": "902",
+                    "Thoroughfare": "Fieldstone Dr",
                     "Time Zone": "America/New_York"
                 },
                 "icon": "mdi:map",
                 "name": "Geocoded Location",
-                "state": "122 Oakwood Ln\nShippenville PA 16254\nUnited States",
+                "state": "902 Fieldstone Dr\nKent OH 44240\nUnited States",
                 "type": "sensor",
                 "unique_id": "geocoded_location",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -220,7 +220,7 @@
                 "attributes": {},
                 "icon": "mdi:cellphone-wireless",
                 "name": "Last Update Trigger",
-                "state": "Significant Location Change",
+                "state": "Initial",
                 "type": "sensor",
                 "unique_id": "last_update_trigger",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"

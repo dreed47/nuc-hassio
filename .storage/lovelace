@@ -2,43 +2,50 @@
     "data": {
         "config": {
             "background": "center / cover no-repeat url(\"/local/assets/background_dark.jpeg\") fixed",
-            "resources": [
-                {
-                    "type": "js",
-                    "url": "/customcards/github/custom-cards/card-tools.js?track=true"
-                },
-                {
-                    "type": "js",
-                    "url": "/customcards/github/custom-cards/auto-entities.js?track=true"
-                },
-                {
-                    "type": "js",
-                    "url": "/customcards/github/custom-cards/day-countdown.js?track=true"
-                },
-                {
-                    "type": "module",
-                    "url": "/customcards/github/custom-cards/tracker-card.js?track=true"
-                },
-                {
-                    "type": "module",
-                    "url": "/customcards/github/custom-cards/button-card.js?track=true"
-                },
-                {
-                    "type": "module",
-                    "url": "/customcards/github/custom-cards/pc-card.js?track=true"
-                }
-            ],
             "title": "NUC8i3 HA",
             "views": [
                 {
-                    "badges": [
-                        "sun.sun"
-                    ],
                     "cards": [
                         {
                             "entities": [
                                 {
-                                    "entity": "cover.garage_door_3"
+                                    "entity": "sensor.worldwide_coronavirus_confirmed"
+                                },
+                                {
+                                    "entity": "sensor.worldwide_coronavirus_current"
+                                },
+                                {
+                                    "entity": "sensor.worldwide_coronavirus_deaths"
+                                },
+                                {
+                                    "entity": "sensor.worldwide_coronavirus_recovered"
+                                }
+                            ],
+                            "title": "Coronavirus Worldwide ",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.us_coronavirus_confirmed"
+                                },
+                                {
+                                    "entity": "sensor.us_coronavirus_current"
+                                },
+                                {
+                                    "entity": "sensor.us_coronavirus_deaths"
+                                },
+                                {
+                                    "entity": "sensor.us_coronavirus_recovered"
+                                }
+                            ],
+                            "title": "Coronavirus US",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "cover.garage_door_4"
                                 },
                                 {
                                     "entity": "sensor.current_version"
@@ -51,6 +58,9 @@
                                 },
                                 {
                                     "entity": "sensor.todoists_alexa"
+                                },
+                                {
+                                    "entity": "switch.livingroomcam_mjpeg_rtsp_server"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -60,18 +70,11 @@
                             "entities": [
                                 {
                                     "entity": "sensor.waqi_east_high_school_ohio_usa"
-                                },
-                                {
-                                    "entity": "camera.backlower"
                                 }
                             ],
                             "show_header_toggle": false,
                             "title": "Radar & Air Quality",
                             "type": "entities"
-                        },
-                        {
-                            "entity": "weather.dark_sky",
-                            "type": "weather-forecast"
                         },
                         {
                             "entities": [
@@ -83,6 +86,10 @@
                             "show_header_toggle": false,
                             "title": "Google Wifi",
                             "type": "entities"
+                        },
+                        {
+                            "entity": "weather.dark_sky",
+                            "type": "weather-forecast"
                         },
                         {
                             "card": {
@@ -575,29 +582,26 @@
                     "badges": [],
                     "cards": [
                         {
+                            "aspect_ratio": "0%",
                             "camera_image": "camera.front",
                             "camera_view": "live",
-                            "entities": [
-                                "weblink.frontcam"
-                            ],
+                            "entities": [],
                             "title": "Front Wyze",
                             "type": "picture-glance"
                         },
                         {
+                            "aspect_ratio": "0%",
                             "camera_image": "camera.backlower",
                             "camera_view": "live",
-                            "entities": [
-                                "weblink.backlowercam"
-                            ],
+                            "entities": [],
                             "title": "HotTub Xiaomi",
                             "type": "picture-glance"
                         },
                         {
+                            "aspect_ratio": "0%",
                             "camera_image": "camera.livingroom",
                             "camera_view": "live",
-                            "entities": [
-                                "weblink.livingroomcam"
-                            ],
+                            "entities": [],
                             "title": "Livingroom Xiaomi",
                             "type": "picture-glance"
                         },
@@ -608,20 +612,18 @@
                             "type": "picture-glance"
                         },
                         {
+                            "aspect_ratio": "0%",
                             "camera_image": "camera.garage2",
                             "camera_view": "live",
-                            "entities": [
-                                "weblink.garagecam"
-                            ],
+                            "entities": [],
                             "title": "Garage Wyzecam",
                             "type": "picture-glance"
                         },
                         {
+                            "aspect_ratio": "0%",
                             "camera_image": "camera.backporch",
                             "camera_view": "live",
-                            "entities": [
-                                "weblink.backporch"
-                            ],
+                            "entities": [],
                             "title": "Back Porch Wyzecam",
                             "type": "picture-glance"
                         }
