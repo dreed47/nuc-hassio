@@ -1,4 +1,4 @@
   - platform: polling
-    api_key: 1253035549:AAHGihFO58qaTt3wd97Aezv_99gqRpSudUw
+    api_key: !secret telegrambot_api_key
     allowed_chat_ids:
-      - 1224496576
+      - !secret telegrambot_allowed_chat1
