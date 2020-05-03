@@ -19,6 +19,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 * [Amazon Echo](https://www.amazon.com/dp/B06XCM9LJ4/ref=ods_mccc_Rdr)
 * [Sonos Speakers](https://www.sonos.com)
 * [Raspberry Pi 3B+](https://www.raspberrypi.org/products/)
+* [Amazon.com : Xiaomi Mijia Dafang Smart IP Camera 110 Degree 1080P FHD Intelligent Security WiFi IP Camera with Night Vision Triple Data Encryption - Support 2-Way Remote Dialogue for Mi Home App : Camera & Photo](https://www.amazon.com/Xiaomi-Dafang-Intelligent-Security-Encryption/dp/B07LGM1H9G)
 * [D-Link DCS-934L Day & Night Wi-Fi Cameras](https://www.amazon.com/D-Link-DCS-934L-Night-Wi-Fi-Camera/dp/B00SIM78R0/ref=sr_1_2?ie=UTF8&qid=1540223138&sr=8-2&keywords=dlink+934)
 * [V380 Camera](https://www.ebay.com/itm/323626421368)
     * [V380 firmware](http://community.netcamstudio.com/t/v380-stream-url/2778/9)
@@ -77,6 +78,7 @@ Some good exampes can be found by perusing other [users configs](https://github.
 * [draw.io](https://www.draw.io)
 * [Sonoff-Tasmota wiki](https://github.com/arendst/Sonoff-Tasmota/wiki)
 * [Floorplan tool (commercial)](https://www.smartdraw.com/)
+* [EliasKotlyar/Xiaomi-Dafang-Hacks](https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks)
 
 ## :computer:  Raspberry Pi Related 
 
