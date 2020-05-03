@@ -119,12 +119,12 @@
                 "attributes": {
                     "Confidence": "High",
                     "Types": [
-                        "Stationary"
+                        "Automotive"
                     ]
                 },
-                "icon": "mdi:human-male",
+                "icon": "mdi:car",
                 "name": "Activity",
-                "state": "Stationary",
+                "state": "Automotive",
                 "type": "sensor",
                 "unique_id": "activity",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -135,9 +135,9 @@
                     "Battery State": "Not Charging"
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery",
+                "icon": "mdi:battery-50",
                 "name": "Battery Level",
-                "state": 100,
+                "state": 56,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -146,10 +146,10 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 100
+                    "Battery Level": 56
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery",
+                "icon": "mdi:battery-50",
                 "name": "Battery State",
                 "state": "Not Charging",
                 "type": "sensor",
