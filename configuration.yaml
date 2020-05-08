@@ -67,3 +67,4 @@ twilio: !include configuration/twilio.yaml
 notify: !include configuration/notify.yaml
 telegram_bot: !include configuration/telegram_bot.yaml
 # sonoff: !include configuration/sonoff.yaml
+# speedtestdotnet:

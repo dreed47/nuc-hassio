@@ -119,12 +119,12 @@
                 "attributes": {
                     "Confidence": "High",
                     "Types": [
-                        "Automotive"
+                        "Unknown"
                     ]
                 },
-                "icon": "mdi:car",
+                "icon": "mdi:help-circle",
                 "name": "Activity",
-                "state": "Automotive",
+                "state": "Unknown",
                 "type": "sensor",
                 "unique_id": "activity",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -132,12 +132,12 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_level": {
                 "added": true,
                 "attributes": {
-                    "Battery State": "Not Charging"
+                    "Battery State": "Charging"
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-50",
+                "icon": "mdi:battery-charging-20",
                 "name": "Battery Level",
-                "state": 56,
+                "state": 33,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -146,12 +146,12 @@
             "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446_battery_state": {
                 "added": true,
                 "attributes": {
-                    "Battery Level": 56
+                    "Battery Level": 33
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-50",
+                "icon": "mdi:battery-charging-20",
                 "name": "Battery State",
-                "state": "Not Charging",
+                "state": "Charging",
                 "type": "sensor",
                 "unique_id": "battery_state",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"
@@ -196,21 +196,21 @@
                     "Inland Water": "N/A",
                     "Locality": "Kent",
                     "Location": [
-                        41.16099299898516,
-                        -81.38513261306244
+                        41.161283923595015,
+                        -81.38503933155141
                     ],
-                    "Name": "902 Fieldstone Dr",
+                    "Name": "906 Fieldstone Dr",
                     "Ocean": "N/A",
                     "Postal Code": "44240",
                     "Sub Administrative Area": "Portage",
                     "Sub Locality": "N/A",
-                    "Sub Thoroughfare": "902",
+                    "Sub Thoroughfare": "906",
                     "Thoroughfare": "Fieldstone Dr",
                     "Time Zone": "America/New_York"
                 },
                 "icon": "mdi:map",
                 "name": "Geocoded Location",
-                "state": "902 Fieldstone Dr\nKent OH 44240\nUnited States",
+                "state": "906 Fieldstone Dr\nKent OH 44240\nUnited States",
                 "type": "sensor",
                 "unique_id": "geocoded_location",
                 "webhook_id": "671226e4fb95cdfbdb868e076360e0eaa50e14dcc81b04d5b2f2f7543c08c446"

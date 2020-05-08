@@ -45,6 +45,9 @@
                         {
                             "entities": [
                                 {
+                                    "entity": "sensor.local_ip"
+                                },
+                                {
                                     "entity": "cover.garage_door_4"
                                 },
                                 {
@@ -74,17 +77,6 @@
                             ],
                             "show_header_toggle": false,
                             "title": "Radar & Air Quality",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "sensor.google_wifi_uptime",
-                                "sensor.google_wifi_new_version",
-                                "sensor.google_wifi_status",
-                                "sensor.google_wifi_last_restart"
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Google Wifi",
                             "type": "entities"
                         },
                         {
